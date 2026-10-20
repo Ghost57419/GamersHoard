@@ -38,10 +38,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.GameInstance01 = new System.Windows.Forms.Panel();
+            this.gameArt01 = new System.Windows.Forms.PictureBox();
+            this.Title01 = new System.Windows.Forms.Label();
+            this.Genre01 = new System.Windows.Forms.Label();
+            this.gameDetails01 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.GameInstance01.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gameArt01)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -62,6 +69,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.GameInstance01);
             this.splitContainer1.Panel2.Controls.Add(this.serRec);
             this.splitContainer1.Panel2.Controls.Add(this.label3);
             this.splitContainer1.Panel2.Controls.Add(this.label2);
@@ -145,11 +153,59 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 157);
+            this.label1.Location = new System.Drawing.Point(34, 246);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Game Instance Here";
+            // 
+            // GameInstance01
+            // 
+            this.GameInstance01.Controls.Add(this.gameDetails01);
+            this.GameInstance01.Controls.Add(this.Genre01);
+            this.GameInstance01.Controls.Add(this.Title01);
+            this.GameInstance01.Controls.Add(this.gameArt01);
+            this.GameInstance01.Location = new System.Drawing.Point(37, 51);
+            this.GameInstance01.Name = "GameInstance01";
+            this.GameInstance01.Size = new System.Drawing.Size(102, 165);
+            this.GameInstance01.TabIndex = 4;
+            // 
+            // gameArt01
+            // 
+            this.gameArt01.Location = new System.Drawing.Point(0, 0);
+            this.gameArt01.Name = "gameArt01";
+            this.gameArt01.Size = new System.Drawing.Size(102, 103);
+            this.gameArt01.TabIndex = 0;
+            this.gameArt01.TabStop = false;
+            // 
+            // Title01
+            // 
+            this.Title01.AutoSize = true;
+            this.Title01.Location = new System.Drawing.Point(3, 106);
+            this.Title01.Name = "Title01";
+            this.Title01.Size = new System.Drawing.Size(27, 13);
+            this.Title01.TabIndex = 1;
+            this.Title01.Text = "Title";
+            this.Title01.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // Genre01
+            // 
+            this.Genre01.AutoSize = true;
+            this.Genre01.Location = new System.Drawing.Point(4, 123);
+            this.Genre01.Name = "Genre01";
+            this.Genre01.Size = new System.Drawing.Size(36, 13);
+            this.Genre01.TabIndex = 2;
+            this.Genre01.Text = "Genre";
+            this.Genre01.Click += new System.EventHandler(this.label4_Click_1);
+            // 
+            // gameDetails01
+            // 
+            this.gameDetails01.Location = new System.Drawing.Point(3, 139);
+            this.gameDetails01.Name = "gameDetails01";
+            this.gameDetails01.Size = new System.Drawing.Size(96, 23);
+            this.gameDetails01.TabIndex = 3;
+            this.gameDetails01.Text = "View Details";
+            this.gameDetails01.UseVisualStyleBackColor = true;
             // 
             // MainScreen
             // 
@@ -165,6 +221,9 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.GameInstance01.ResumeLayout(false);
+            this.GameInstance01.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gameArt01)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -181,6 +240,11 @@
         private System.Windows.Forms.Button btnNewLib;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button btnAdvSer;
+        private System.Windows.Forms.Panel GameInstance01;
+        private System.Windows.Forms.Label Title01;
+        private System.Windows.Forms.PictureBox gameArt01;
+        private System.Windows.Forms.Label Genre01;
+        private System.Windows.Forms.Button gameDetails01;
     }
 }
 
