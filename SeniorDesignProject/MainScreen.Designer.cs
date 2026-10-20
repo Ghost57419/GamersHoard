@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnAdvSer = new System.Windows.Forms.Button();
+            this.btnNewLib = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.serNav = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.serRec = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.serNav = new System.Windows.Forms.TextBox();
-            this.serRec = new System.Windows.Forms.TextBox();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.btnNewLib = new System.Windows.Forms.Button();
-            this.btnAdvSer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -49,7 +49,6 @@
             this.splitContainer1.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Enabled = false;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -71,6 +70,42 @@
             this.splitContainer1.SplitterDistance = 172;
             this.splitContainer1.TabIndex = 0;
             // 
+            // btnAdvSer
+            // 
+            this.btnAdvSer.Location = new System.Drawing.Point(11, 349);
+            this.btnAdvSer.Name = "btnAdvSer";
+            this.btnAdvSer.Size = new System.Drawing.Size(100, 35);
+            this.btnAdvSer.TabIndex = 4;
+            this.btnAdvSer.Text = "Advanced Search";
+            this.btnAdvSer.UseVisualStyleBackColor = true;
+            // 
+            // btnNewLib
+            // 
+            this.btnNewLib.Location = new System.Drawing.Point(12, 390);
+            this.btnNewLib.Name = "btnNewLib";
+            this.btnNewLib.Size = new System.Drawing.Size(100, 35);
+            this.btnNewLib.TabIndex = 3;
+            this.btnNewLib.Text = "+ New Library";
+            this.btnNewLib.UseVisualStyleBackColor = true;
+            this.btnNewLib.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.Location = new System.Drawing.Point(11, 51);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(101, 35);
+            this.btnHome.TabIndex = 2;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = true;
+            // 
+            // serNav
+            // 
+            this.serNav.Location = new System.Drawing.Point(12, 12);
+            this.serNav.Name = "serNav";
+            this.serNav.Size = new System.Drawing.Size(100, 20);
+            this.serNav.TabIndex = 1;
+            this.serNav.Text = "Search..";
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(138, -1);
@@ -80,6 +115,14 @@
             this.button1.Text = "Toggle";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // serRec
+            // 
+            this.serRec.Location = new System.Drawing.Point(184, 12);
+            this.serRec.Name = "serRec";
+            this.serRec.Size = new System.Drawing.Size(222, 20);
+            this.serRec.TabIndex = 3;
+            this.serRec.Text = "Search Recommendations..";
             // 
             // label3
             // 
@@ -107,50 +150,6 @@
             this.label1.Size = new System.Drawing.Size(105, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Game Instance Here";
-            // 
-            // serNav
-            // 
-            this.serNav.Location = new System.Drawing.Point(12, 12);
-            this.serNav.Name = "serNav";
-            this.serNav.Size = new System.Drawing.Size(100, 20);
-            this.serNav.TabIndex = 1;
-            this.serNav.Text = "Search..";
-            // 
-            // serRec
-            // 
-            this.serRec.Location = new System.Drawing.Point(184, 12);
-            this.serRec.Name = "serRec";
-            this.serRec.Size = new System.Drawing.Size(222, 20);
-            this.serRec.TabIndex = 3;
-            this.serRec.Text = "Search Recommendations..";
-            // 
-            // btnHome
-            // 
-            this.btnHome.Location = new System.Drawing.Point(11, 51);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(101, 35);
-            this.btnHome.TabIndex = 2;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
-            // 
-            // btnNewLib
-            // 
-            this.btnNewLib.Location = new System.Drawing.Point(12, 390);
-            this.btnNewLib.Name = "btnNewLib";
-            this.btnNewLib.Size = new System.Drawing.Size(100, 35);
-            this.btnNewLib.TabIndex = 3;
-            this.btnNewLib.Text = "+ New Library";
-            this.btnNewLib.UseVisualStyleBackColor = true;
-            this.btnNewLib.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnAdvSer
-            // 
-            this.btnAdvSer.Location = new System.Drawing.Point(11, 349);
-            this.btnAdvSer.Name = "btnAdvSer";
-            this.btnAdvSer.Size = new System.Drawing.Size(100, 35);
-            this.btnAdvSer.TabIndex = 4;
-            this.btnAdvSer.Text = "Advanced Search";
-            this.btnAdvSer.UseVisualStyleBackColor = true;
             // 
             // MainScreen
             // 

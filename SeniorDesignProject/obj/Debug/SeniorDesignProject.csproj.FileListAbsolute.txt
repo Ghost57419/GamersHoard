@@ -8,4 +8,5 @@ C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignPro
 C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.exe
 C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.pdb
 C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.exe.config
-C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.Form1.resources
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.GameSearch.resources
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.MainScreen.resources
