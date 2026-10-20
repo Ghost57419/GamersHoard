@@ -1,0 +1,11 @@
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\bin\Debug\SeniorDesignProject.exe.config
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\bin\Debug\SeniorDesignProject.exe
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\bin\Debug\SeniorDesignProject.pdb
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.csproj.AssemblyReference.cache
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.Properties.Resources.resources
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.csproj.GenerateResource.cache
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.csproj.CoreCompileInputs.cache
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.exe
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.pdb
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.exe.config
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.Form1.resources

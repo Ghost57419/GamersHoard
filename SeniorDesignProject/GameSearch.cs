@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SeniorDesignProject
 {
-    public partial class Form1 : Form
+    public partial class GameSearch : Form
     {
-        public Form1()
+        public GameSearch()
         {
             InitializeComponent();
         }
