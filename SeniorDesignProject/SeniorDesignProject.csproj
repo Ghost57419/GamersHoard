@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="databaseInstance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databaseInstance.Designer.cs">
+      <DependentUpon>databaseInstance.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameSearch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="databaseInstance.resx">
+      <DependentUpon>databaseInstance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameSearch.resx">
       <DependentUpon>GameSearch.cs</DependentUpon>
     </EmbeddedResource>

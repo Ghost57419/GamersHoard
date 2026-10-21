@@ -10,3 +10,4 @@ C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignPro
 C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.exe.config
 C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.GameSearch.resources
 C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.MainScreen.resources
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.databaseInstance.resources

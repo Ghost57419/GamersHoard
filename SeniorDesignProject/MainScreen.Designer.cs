@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.databaseContainer = new System.Windows.Forms.Panel();
             this.btnAdvSer = new System.Windows.Forms.Button();
             this.btnNewLib = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.serNav = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.GameInstance01 = new System.Windows.Forms.Panel();
+            this.gameDetails01 = new System.Windows.Forms.Button();
+            this.Genre01 = new System.Windows.Forms.Label();
+            this.Title01 = new System.Windows.Forms.Label();
+            this.gameArt01 = new System.Windows.Forms.PictureBox();
             this.serRec = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.GameInstance01 = new System.Windows.Forms.Panel();
-            this.gameArt01 = new System.Windows.Forms.PictureBox();
-            this.Title01 = new System.Windows.Forms.Label();
-            this.Genre01 = new System.Windows.Forms.Label();
-            this.gameDetails01 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -61,6 +62,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.databaseContainer);
             this.splitContainer1.Panel1.Controls.Add(this.btnAdvSer);
             this.splitContainer1.Panel1.Controls.Add(this.btnNewLib);
             this.splitContainer1.Panel1.Controls.Add(this.btnHome);
@@ -77,6 +79,15 @@
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
             this.splitContainer1.SplitterDistance = 172;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // databaseContainer
+            // 
+            this.databaseContainer.AutoScroll = true;
+            this.databaseContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.databaseContainer.Location = new System.Drawing.Point(12, 38);
+            this.databaseContainer.Name = "databaseContainer";
+            this.databaseContainer.Size = new System.Drawing.Size(101, 131);
+            this.databaseContainer.TabIndex = 5;
             // 
             // btnAdvSer
             // 
@@ -99,7 +110,7 @@
             // 
             // btnHome
             // 
-            this.btnHome.Location = new System.Drawing.Point(11, 51);
+            this.btnHome.Location = new System.Drawing.Point(10, 181);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(101, 35);
             this.btnHome.TabIndex = 2;
@@ -123,6 +134,54 @@
             this.button1.Text = "Toggle";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // GameInstance01
+            // 
+            this.GameInstance01.Controls.Add(this.gameDetails01);
+            this.GameInstance01.Controls.Add(this.Genre01);
+            this.GameInstance01.Controls.Add(this.Title01);
+            this.GameInstance01.Controls.Add(this.gameArt01);
+            this.GameInstance01.Location = new System.Drawing.Point(37, 51);
+            this.GameInstance01.Name = "GameInstance01";
+            this.GameInstance01.Size = new System.Drawing.Size(102, 165);
+            this.GameInstance01.TabIndex = 4;
+            // 
+            // gameDetails01
+            // 
+            this.gameDetails01.Location = new System.Drawing.Point(3, 139);
+            this.gameDetails01.Name = "gameDetails01";
+            this.gameDetails01.Size = new System.Drawing.Size(96, 23);
+            this.gameDetails01.TabIndex = 3;
+            this.gameDetails01.Text = "View Details";
+            this.gameDetails01.UseVisualStyleBackColor = true;
+            // 
+            // Genre01
+            // 
+            this.Genre01.AutoSize = true;
+            this.Genre01.Location = new System.Drawing.Point(4, 123);
+            this.Genre01.Name = "Genre01";
+            this.Genre01.Size = new System.Drawing.Size(36, 13);
+            this.Genre01.TabIndex = 2;
+            this.Genre01.Text = "Genre";
+            this.Genre01.Click += new System.EventHandler(this.label4_Click_1);
+            // 
+            // Title01
+            // 
+            this.Title01.AutoSize = true;
+            this.Title01.Location = new System.Drawing.Point(3, 106);
+            this.Title01.Name = "Title01";
+            this.Title01.Size = new System.Drawing.Size(27, 13);
+            this.Title01.TabIndex = 1;
+            this.Title01.Text = "Title";
+            this.Title01.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // gameArt01
+            // 
+            this.gameArt01.Location = new System.Drawing.Point(0, 0);
+            this.gameArt01.Name = "gameArt01";
+            this.gameArt01.Size = new System.Drawing.Size(102, 103);
+            this.gameArt01.TabIndex = 0;
+            this.gameArt01.TabStop = false;
             // 
             // serRec
             // 
@@ -158,54 +217,6 @@
             this.label1.Size = new System.Drawing.Size(105, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Game Instance Here";
-            // 
-            // GameInstance01
-            // 
-            this.GameInstance01.Controls.Add(this.gameDetails01);
-            this.GameInstance01.Controls.Add(this.Genre01);
-            this.GameInstance01.Controls.Add(this.Title01);
-            this.GameInstance01.Controls.Add(this.gameArt01);
-            this.GameInstance01.Location = new System.Drawing.Point(37, 51);
-            this.GameInstance01.Name = "GameInstance01";
-            this.GameInstance01.Size = new System.Drawing.Size(102, 165);
-            this.GameInstance01.TabIndex = 4;
-            // 
-            // gameArt01
-            // 
-            this.gameArt01.Location = new System.Drawing.Point(0, 0);
-            this.gameArt01.Name = "gameArt01";
-            this.gameArt01.Size = new System.Drawing.Size(102, 103);
-            this.gameArt01.TabIndex = 0;
-            this.gameArt01.TabStop = false;
-            // 
-            // Title01
-            // 
-            this.Title01.AutoSize = true;
-            this.Title01.Location = new System.Drawing.Point(3, 106);
-            this.Title01.Name = "Title01";
-            this.Title01.Size = new System.Drawing.Size(27, 13);
-            this.Title01.TabIndex = 1;
-            this.Title01.Text = "Title";
-            this.Title01.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // Genre01
-            // 
-            this.Genre01.AutoSize = true;
-            this.Genre01.Location = new System.Drawing.Point(4, 123);
-            this.Genre01.Name = "Genre01";
-            this.Genre01.Size = new System.Drawing.Size(36, 13);
-            this.Genre01.TabIndex = 2;
-            this.Genre01.Text = "Genre";
-            this.Genre01.Click += new System.EventHandler(this.label4_Click_1);
-            // 
-            // gameDetails01
-            // 
-            this.gameDetails01.Location = new System.Drawing.Point(3, 139);
-            this.gameDetails01.Name = "gameDetails01";
-            this.gameDetails01.Size = new System.Drawing.Size(96, 23);
-            this.gameDetails01.TabIndex = 3;
-            this.gameDetails01.Text = "View Details";
-            this.gameDetails01.UseVisualStyleBackColor = true;
             // 
             // MainScreen
             // 
@@ -245,6 +256,7 @@
         private System.Windows.Forms.PictureBox gameArt01;
         private System.Windows.Forms.Label Genre01;
         private System.Windows.Forms.Button gameDetails01;
+        private System.Windows.Forms.Panel databaseContainer;
     }
 }
 
