@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SeniorDesignProject
 {
-    public partial class GameSearch : Form
+    public partial class GameSearch : UserControl
     {
         public GameSearch()
         {
@@ -19,7 +19,13 @@ namespace SeniorDesignProject
 
         private void button1_Click(object sender, EventArgs e)
         {
+            MainScreenPreset mainMenu = new MainScreenPreset();
 
+            Form.ActiveForm.Controls.Clear();
+
+            mainMenu.Dock = DockStyle.Fill;
+
+            Form.ActiveForm.Controls.Add(mainMenu);
         }
 
         private void label1_Click(object sender, EventArgs e)

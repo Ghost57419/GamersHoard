@@ -59,10 +59,16 @@
       <DependentUpon>GamePanel.cs</DependentUpon>
     </Compile>
     <Compile Include="GameSearch.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GameSearch.Designer.cs">
       <DependentUpon>GameSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreenPreset.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainScreenPreset.Designer.cs">
+      <DependentUpon>MainScreenPreset.cs</DependentUpon>
     </Compile>
     <Compile Include="MainScreen.cs">
       <SubType>Form</SubType>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GameSearch.resx">
       <DependentUpon>GameSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreenPreset.resx">
+      <DependentUpon>MainScreenPreset.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainScreen.resx">
       <DependentUpon>MainScreen.cs</DependentUpon>

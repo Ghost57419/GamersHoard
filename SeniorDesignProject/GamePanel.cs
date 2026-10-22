@@ -16,5 +16,18 @@ namespace SeniorDesignProject
         {
             InitializeComponent();
         }
+
+        private void gameDetails01_Click(object sender, EventArgs e)
+        {
+
+            GameSearch game = new GameSearch();
+
+            Form.ActiveForm.Controls.Clear();
+
+            game.Dock = DockStyle.Fill;
+
+            Form.ActiveForm.Controls.Add(game);
+
+        }
     }
 }

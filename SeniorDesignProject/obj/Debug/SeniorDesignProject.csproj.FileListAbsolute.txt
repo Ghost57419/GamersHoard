@@ -25,3 +25,5 @@ C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\S
 C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.exe
 C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.pdb
 C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.GamePanel.resources
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.GamePanel.resources
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.MainScreenPreset.resources

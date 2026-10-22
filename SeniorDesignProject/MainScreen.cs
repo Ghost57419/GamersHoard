@@ -16,35 +16,43 @@ namespace SeniorDesignProject
         {
             InitializeComponent();
 
+            MainScreenPreset userControlObject = new MainScreenPreset();
+
+            this.Controls.Clear();
+
+            userControlObject.Dock = DockStyle.Fill;
+
+            this.Controls.Add(userControlObject);
+
             // Insert logic to see if there is an instance of a database to actually display
-            int tempDatabase = 1;
+            //int tempDatabase = 1;
 
-            if(tempDatabase > 0)
-            {
-                databaseContainer.Visible = true;
-                // Display the instance of the databases and adjust the size depending on the amount of databases
+            //if (tempDatabase > 0)
+            //{
+            //    databaseContainer.Visible = true;
+            //    // Display the instance of the databases and adjust the size depending on the amount of databases
 
-                // Dont keep this, this is purely testing purpose
-                databaseInstance db1 = new databaseInstance();
+            //    // Dont keep this, this is purely testing purpose
+            //    databaseInstance db1 = new databaseInstance();
 
 
 
-                databaseContainer.Controls.Add(db1);
-              
-            }
-            else
-            {
-                databaseContainer.Visible = false;
-            }
+            //    databaseContainer.Controls.Add(db1);
 
-            if(tempDatabase > 0)
-            {
-                GameDisplayPnl.Visible = true;
-            
-                GamePanel gdp = new GamePanel();
+            //}
+            //else
+            //{
+            //    databaseContainer.Visible = false;
+            //}
 
-                GameDisplayPnl.Controls.Add(gdp);
-            }
+            //if (tempDatabase > 0)
+            //{
+            //    GameDisplayPnl.Visible = true;
+
+            //    GamePanel gdp = new GamePanel();
+
+            //    GameDisplayPnl.Controls.Add(gdp);
+            //}
 
         }
 
@@ -96,6 +104,17 @@ namespace SeniorDesignProject
         private void gameArt01_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void MainScreen_Load(object sender, EventArgs e)
+        {
+            //MainScreenPreset userControlObject = new MainScreenPreset();
+
+            //Form.ActiveForm.Controls.Clear();
+
+            //userControlObject.Dock = DockStyle.Fill;
+
+            //Form.ActiveForm.Controls.Add(userControlObject);
         }
     }
 }
