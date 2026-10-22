@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace SeniorDesignProject
 {
     public partial class databaseInstance : UserControl
@@ -25,6 +27,17 @@ namespace SeniorDesignProject
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void clark_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void clark_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("Visual studios mom is a hore");
+            this.Parent.Controls.Remove(this);
         }
     }
 }
