@@ -25,11 +25,12 @@ namespace SeniorDesignProject
                 // Display the instance of the databases and adjust the size depending on the amount of databases
 
                 // Dont keep this, this is purely testing purpose
+
                 databaseInstance db1 = new databaseInstance();
 
+                
 
                 databaseContainer.Controls.Add(db1);
-
             }
             else
             {
@@ -83,6 +84,11 @@ namespace SeniorDesignProject
         }
 
         private void gameArt01_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
         {
 
         }

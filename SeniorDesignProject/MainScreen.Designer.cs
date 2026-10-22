@@ -76,7 +76,6 @@
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(6);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -96,37 +95,34 @@
             this.splitContainer1.Panel2.Controls.Add(this.GameInstance01);
             this.splitContainer1.Panel2.Controls.Add(this.serRec);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(1600, 865);
-            this.splitContainer1.SplitterDistance = 344;
-            this.splitContainer1.SplitterWidth = 8;
+            this.splitContainer1.Size = new System.Drawing.Size(800, 450);
+            this.splitContainer1.SplitterDistance = 172;
             this.splitContainer1.TabIndex = 0;
             // 
             // databaseContainer
             // 
             this.databaseContainer.AutoScroll = true;
+            this.databaseContainer.AutoSize = true;
             this.databaseContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.databaseContainer.Location = new System.Drawing.Point(24, 73);
-            this.databaseContainer.Margin = new System.Windows.Forms.Padding(6);
+            this.databaseContainer.Location = new System.Drawing.Point(12, 38);
             this.databaseContainer.Name = "databaseContainer";
-            this.databaseContainer.Size = new System.Drawing.Size(290, 470);
+            this.databaseContainer.Size = new System.Drawing.Size(146, 245);
             this.databaseContainer.TabIndex = 5;
             // 
             // btnAdvSer
             // 
-            this.btnAdvSer.Location = new System.Drawing.Point(22, 671);
-            this.btnAdvSer.Margin = new System.Windows.Forms.Padding(6);
+            this.btnAdvSer.Location = new System.Drawing.Point(11, 349);
             this.btnAdvSer.Name = "btnAdvSer";
-            this.btnAdvSer.Size = new System.Drawing.Size(200, 67);
+            this.btnAdvSer.Size = new System.Drawing.Size(100, 35);
             this.btnAdvSer.TabIndex = 4;
             this.btnAdvSer.Text = "Advanced Search";
             this.btnAdvSer.UseVisualStyleBackColor = true;
             // 
             // btnNewLib
             // 
-            this.btnNewLib.Location = new System.Drawing.Point(24, 750);
-            this.btnNewLib.Margin = new System.Windows.Forms.Padding(6);
+            this.btnNewLib.Location = new System.Drawing.Point(12, 390);
             this.btnNewLib.Name = "btnNewLib";
-            this.btnNewLib.Size = new System.Drawing.Size(200, 67);
+            this.btnNewLib.Size = new System.Drawing.Size(100, 35);
             this.btnNewLib.TabIndex = 3;
             this.btnNewLib.Text = "+ New Library";
             this.btnNewLib.UseVisualStyleBackColor = true;
@@ -134,29 +130,27 @@
             // 
             // btnHome
             // 
-            this.btnHome.Location = new System.Drawing.Point(24, 592);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(6);
+            this.btnHome.Location = new System.Drawing.Point(12, 308);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(202, 67);
+            this.btnHome.Size = new System.Drawing.Size(101, 35);
             this.btnHome.TabIndex = 2;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // serNav
             // 
-            this.serNav.Location = new System.Drawing.Point(24, 23);
-            this.serNav.Margin = new System.Windows.Forms.Padding(6);
+            this.serNav.Location = new System.Drawing.Point(12, 12);
             this.serNav.Name = "serNav";
-            this.serNav.Size = new System.Drawing.Size(196, 31);
+            this.serNav.Size = new System.Drawing.Size(100, 20);
             this.serNav.TabIndex = 1;
             this.serNav.Text = "Search..";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(256, 17);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Location = new System.Drawing.Point(128, 9);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 42);
+            this.button1.Size = new System.Drawing.Size(29, 22);
             this.button1.TabIndex = 0;
             this.button1.Text = "<";
             this.button1.UseVisualStyleBackColor = true;
@@ -168,18 +162,16 @@
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(74, 478);
-            this.panel3.Margin = new System.Windows.Forms.Padding(6);
+            this.panel3.Location = new System.Drawing.Point(37, 249);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(204, 317);
+            this.panel3.Size = new System.Drawing.Size(103, 166);
             this.panel3.TabIndex = 5;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(6, 267);
-            this.button4.Margin = new System.Windows.Forms.Padding(6);
+            this.button4.Location = new System.Drawing.Point(3, 139);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(192, 44);
+            this.button4.Size = new System.Drawing.Size(96, 23);
             this.button4.TabIndex = 3;
             this.button4.Text = "View Details";
             this.button4.UseVisualStyleBackColor = true;
@@ -187,20 +179,18 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 237);
-            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label5.Location = new System.Drawing.Point(4, 123);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 25);
+            this.label5.Size = new System.Drawing.Size(36, 13);
             this.label5.TabIndex = 2;
             this.label5.Text = "Genre";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 204);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label6.Location = new System.Drawing.Point(3, 106);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 25);
+            this.label6.Size = new System.Drawing.Size(27, 13);
             this.label6.TabIndex = 1;
             this.label6.Text = "Title";
             // 
@@ -208,9 +198,8 @@
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(204, 198);
+            this.pictureBox3.Size = new System.Drawing.Size(103, 104);
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
@@ -221,18 +210,16 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(866, 98);
-            this.panel2.Margin = new System.Windows.Forms.Padding(6);
+            this.panel2.Location = new System.Drawing.Point(433, 51);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(204, 317);
+            this.panel2.Size = new System.Drawing.Size(103, 166);
             this.panel2.TabIndex = 5;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(6, 267);
-            this.button3.Margin = new System.Windows.Forms.Padding(6);
+            this.button3.Location = new System.Drawing.Point(3, 139);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(192, 44);
+            this.button3.Size = new System.Drawing.Size(96, 23);
             this.button3.TabIndex = 3;
             this.button3.Text = "View Details";
             this.button3.UseVisualStyleBackColor = true;
@@ -240,20 +227,18 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 237);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Location = new System.Drawing.Point(4, 123);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 25);
+            this.label3.Size = new System.Drawing.Size(36, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Genre";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 204);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Location = new System.Drawing.Point(3, 106);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 25);
+            this.label4.Size = new System.Drawing.Size(27, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "Title";
             // 
@@ -261,9 +246,8 @@
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(204, 198);
+            this.pictureBox2.Size = new System.Drawing.Size(103, 104);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
@@ -274,18 +258,16 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(449, 98);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6);
+            this.panel1.Location = new System.Drawing.Point(224, 51);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(204, 317);
+            this.panel1.Size = new System.Drawing.Size(103, 166);
             this.panel1.TabIndex = 6;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(6, 267);
-            this.button2.Margin = new System.Windows.Forms.Padding(6);
+            this.button2.Location = new System.Drawing.Point(3, 139);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(192, 44);
+            this.button2.Size = new System.Drawing.Size(96, 23);
             this.button2.TabIndex = 3;
             this.button2.Text = "View Details";
             this.button2.UseVisualStyleBackColor = true;
@@ -293,20 +275,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 237);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(4, 123);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 25);
+            this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Genre";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 204);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Location = new System.Drawing.Point(3, 106);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 25);
+            this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Title";
             // 
@@ -314,9 +294,8 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(204, 198);
+            this.pictureBox1.Size = new System.Drawing.Size(103, 104);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -327,19 +306,17 @@
             this.GameInstance01.Controls.Add(this.Genre01);
             this.GameInstance01.Controls.Add(this.Title01);
             this.GameInstance01.Controls.Add(this.gameArt01);
-            this.GameInstance01.Location = new System.Drawing.Point(74, 98);
-            this.GameInstance01.Margin = new System.Windows.Forms.Padding(6);
+            this.GameInstance01.Location = new System.Drawing.Point(37, 51);
             this.GameInstance01.Name = "GameInstance01";
-            this.GameInstance01.Size = new System.Drawing.Size(204, 317);
+            this.GameInstance01.Size = new System.Drawing.Size(103, 166);
             this.GameInstance01.TabIndex = 4;
             this.GameInstance01.Paint += new System.Windows.Forms.PaintEventHandler(this.GameInstance01_Paint);
             // 
             // gameDetails01
             // 
-            this.gameDetails01.Location = new System.Drawing.Point(6, 267);
-            this.gameDetails01.Margin = new System.Windows.Forms.Padding(6);
+            this.gameDetails01.Location = new System.Drawing.Point(3, 139);
             this.gameDetails01.Name = "gameDetails01";
-            this.gameDetails01.Size = new System.Drawing.Size(192, 44);
+            this.gameDetails01.Size = new System.Drawing.Size(96, 23);
             this.gameDetails01.TabIndex = 3;
             this.gameDetails01.Text = "View Details";
             this.gameDetails01.UseVisualStyleBackColor = true;
@@ -347,10 +324,9 @@
             // Genre01
             // 
             this.Genre01.AutoSize = true;
-            this.Genre01.Location = new System.Drawing.Point(8, 237);
-            this.Genre01.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Genre01.Location = new System.Drawing.Point(4, 123);
             this.Genre01.Name = "Genre01";
-            this.Genre01.Size = new System.Drawing.Size(71, 25);
+            this.Genre01.Size = new System.Drawing.Size(36, 13);
             this.Genre01.TabIndex = 2;
             this.Genre01.Text = "Genre";
             this.Genre01.Click += new System.EventHandler(this.label4_Click_1);
@@ -358,10 +334,9 @@
             // Title01
             // 
             this.Title01.AutoSize = true;
-            this.Title01.Location = new System.Drawing.Point(6, 204);
-            this.Title01.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Title01.Location = new System.Drawing.Point(3, 106);
             this.Title01.Name = "Title01";
-            this.Title01.Size = new System.Drawing.Size(53, 25);
+            this.Title01.Size = new System.Drawing.Size(27, 13);
             this.Title01.TabIndex = 1;
             this.Title01.Text = "Title";
             this.Title01.Click += new System.EventHandler(this.label4_Click);
@@ -370,29 +345,26 @@
             // 
             this.gameArt01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.gameArt01.Location = new System.Drawing.Point(0, 0);
-            this.gameArt01.Margin = new System.Windows.Forms.Padding(6);
             this.gameArt01.Name = "gameArt01";
-            this.gameArt01.Size = new System.Drawing.Size(204, 198);
+            this.gameArt01.Size = new System.Drawing.Size(103, 104);
             this.gameArt01.TabIndex = 0;
             this.gameArt01.TabStop = false;
             this.gameArt01.Click += new System.EventHandler(this.gameArt01_Click);
             // 
             // serRec
             // 
-            this.serRec.Location = new System.Drawing.Point(368, 23);
-            this.serRec.Margin = new System.Windows.Forms.Padding(6);
+            this.serRec.Location = new System.Drawing.Point(184, 12);
             this.serRec.Name = "serRec";
-            this.serRec.Size = new System.Drawing.Size(440, 31);
+            this.serRec.Size = new System.Drawing.Size(222, 20);
             this.serRec.TabIndex = 3;
             this.serRec.Text = "Search Recommendations..";
             // 
             // MainScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "MainScreen";
             this.Text = "Form1";
             this.splitContainer1.Panel1.ResumeLayout(false);

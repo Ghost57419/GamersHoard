@@ -28,90 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Delete = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.clark = new System.Windows.Forms.Panel();
+            this.clarksSon = new System.Windows.Forms.Label();
+            this.clark.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // clark
             // 
-            this.textBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Alert;
-            this.textBox1.Location = new System.Drawing.Point(18, 13);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(286, 31);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "User Generated Lists:";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.clark.AutoSize = true;
+            this.clark.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.clark.Controls.Add(this.clarksSon);
+            this.clark.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.clark.Location = new System.Drawing.Point(0, 0);
+            this.clark.Name = "clark";
+            this.clark.Size = new System.Drawing.Size(114, 51);
+            this.clark.TabIndex = 0;
+            this.clark.Click += new System.EventHandler(this.clark_Click);
+            this.clark.Paint += new System.Windows.Forms.PaintEventHandler(this.clark_Paint);
             // 
-            // Delete
+            // clarksSon
             // 
-            this.Delete.AccessibleRole = System.Windows.Forms.AccessibleRole.Alert;
-            this.Delete.Location = new System.Drawing.Point(65, 470);
-            this.Delete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.Delete.Name = "Delete";
-            this.Delete.Size = new System.Drawing.Size(186, 44);
-            this.Delete.TabIndex = 1;
-            this.Delete.Text = "DELETE";
-            this.Delete.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.AccessibleRole = System.Windows.Forms.AccessibleRole.Alert;
-            this.button1.Location = new System.Drawing.Point(14, 56);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(290, 470);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(37, 72);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(236, 33);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.Text = "All Games List";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(37, 126);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(236, 33);
-            this.comboBox2.TabIndex = 4;
-            this.comboBox2.Text = "Favorites List";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(37, 182);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(236, 33);
-            this.comboBox3.TabIndex = 5;
-            this.comboBox3.Text = "User Created List";
+            this.clarksSon.AutoSize = true;
+            this.clarksSon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.clarksSon.Location = new System.Drawing.Point(26, 16);
+            this.clarksSon.Name = "clarksSon";
+            this.clarksSon.Size = new System.Drawing.Size(53, 13);
+            this.clarksSon.TabIndex = 0;
+            this.clarksSon.Text = "Database";
+            this.clarksSon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // databaseInstance
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.Delete);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Controls.Add(this.clark);
             this.Name = "databaseInstance";
-            this.Size = new System.Drawing.Size(300, 500);
+            this.Size = new System.Drawing.Size(114, 51);
+            this.clark.ResumeLayout(false);
+            this.clark.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,11 +74,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button Delete;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Panel clark;
+        private System.Windows.Forms.Label clarksSon;
     }
 }
