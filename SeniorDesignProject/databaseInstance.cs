@@ -36,7 +36,6 @@ namespace SeniorDesignProject
 
         private void clark_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Visual studios mom is a hore");
             this.Parent.Controls.Remove(this);
         }
     }

@@ -28,13 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.mainPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
+            // 
+            // mainPanel
+            // 
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(0, 0);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(800, 450);
+            this.mainPanel.TabIndex = 0;
             // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.mainPanel);
             this.Name = "MainScreen";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MainScreen_Load);
@@ -43,6 +53,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel mainPanel;
     }
 }
 

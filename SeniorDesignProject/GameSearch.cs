@@ -15,6 +15,8 @@ namespace SeniorDesignProject
         public GameSearch()
         {
             InitializeComponent();
+            // This is a problem this gets disabled somewhere and I've strong armed it.
+            splitContainer1.Enabled = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
