@@ -52,6 +52,12 @@
     <Compile Include="databaseInstance.Designer.cs">
       <DependentUpon>databaseInstance.cs</DependentUpon>
     </Compile>
+    <Compile Include="GamePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GamePanel.Designer.cs">
+      <DependentUpon>GamePanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameSearch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="databaseInstance.resx">
       <DependentUpon>databaseInstance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamePanel.resx">
+      <DependentUpon>GamePanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameSearch.resx">
       <DependentUpon>GameSearch.cs</DependentUpon>

@@ -28,13 +28,24 @@ namespace SeniorDesignProject
                 databaseInstance db1 = new databaseInstance();
 
 
-                databaseContainer.Controls.Add(db1);
 
+                databaseContainer.Controls.Add(db1);
+              
             }
             else
             {
                 databaseContainer.Visible = false;
             }
+
+            if(tempDatabase > 0)
+            {
+                GameDisplayPnl.Visible = true;
+            
+                GamePanel gdp = new GamePanel();
+
+                GameDisplayPnl.Controls.Add(gdp);
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
