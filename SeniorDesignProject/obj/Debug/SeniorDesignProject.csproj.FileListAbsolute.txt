@@ -11,3 +11,16 @@ C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignPro
 C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.GameSearch.resources
 C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.MainScreen.resources
 C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.databaseInstance.resources
+C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\bin\Debug\SeniorDesignProject.exe.config
+C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\bin\Debug\SeniorDesignProject.exe
+C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\bin\Debug\SeniorDesignProject.pdb
+C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.csproj.AssemblyReference.cache
+C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.exe.config
+C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.databaseInstance.resources
+C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.GameSearch.resources
+C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.MainScreen.resources
+C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.Properties.Resources.resources
+C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.csproj.GenerateResource.cache
+C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.csproj.CoreCompileInputs.cache
+C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.exe
+C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.pdb
