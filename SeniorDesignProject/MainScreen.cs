@@ -24,36 +24,6 @@ namespace SeniorDesignProject
 
             this.Controls.Add(userControlObject);
 
-            // Insert logic to see if there is an instance of a database to actually display
-            //int tempDatabase = 1;
-
-            //if (tempDatabase > 0)
-            //{
-            //    databaseContainer.Visible = true;
-            //    // Display the instance of the databases and adjust the size depending on the amount of databases
-
-            //    // Dont keep this, this is purely testing purpose
-            //    databaseInstance db1 = new databaseInstance();
-
-
-
-            //    databaseContainer.Controls.Add(db1);
-
-            //}
-            //else
-            //{
-            //    databaseContainer.Visible = false;
-            //}
-
-            //if (tempDatabase > 0)
-            //{
-            //    GameDisplayPnl.Visible = true;
-
-            //    GamePanel gdp = new GamePanel();
-
-            //    GameDisplayPnl.Controls.Add(gdp);
-            //}
-
         }
 
         private void button2_Click(object sender, EventArgs e)

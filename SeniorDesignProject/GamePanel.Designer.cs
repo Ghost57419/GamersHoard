@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GamePanel));
             this.GameInstance01 = new System.Windows.Forms.Panel();
             this.gameDetails01 = new System.Windows.Forms.Button();
             this.Genre01 = new System.Windows.Forms.Label();
@@ -44,16 +45,18 @@
             this.GameInstance01.Controls.Add(this.Genre01);
             this.GameInstance01.Controls.Add(this.Title01);
             this.GameInstance01.Controls.Add(this.gameArt01);
-            this.GameInstance01.Location = new System.Drawing.Point(6, 9);
+            this.GameInstance01.Location = new System.Drawing.Point(12, 17);
+            this.GameInstance01.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.GameInstance01.Name = "GameInstance01";
-            this.GameInstance01.Size = new System.Drawing.Size(103, 166);
+            this.GameInstance01.Size = new System.Drawing.Size(204, 317);
             this.GameInstance01.TabIndex = 5;
             // 
             // gameDetails01
             // 
-            this.gameDetails01.Location = new System.Drawing.Point(3, 139);
+            this.gameDetails01.Location = new System.Drawing.Point(6, 267);
+            this.gameDetails01.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.gameDetails01.Name = "gameDetails01";
-            this.gameDetails01.Size = new System.Drawing.Size(96, 23);
+            this.gameDetails01.Size = new System.Drawing.Size(192, 44);
             this.gameDetails01.TabIndex = 3;
             this.gameDetails01.Text = "View Details";
             this.gameDetails01.UseVisualStyleBackColor = true;
@@ -62,38 +65,43 @@
             // Genre01
             // 
             this.Genre01.AutoSize = true;
-            this.Genre01.Location = new System.Drawing.Point(4, 123);
+            this.Genre01.Location = new System.Drawing.Point(8, 237);
+            this.Genre01.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Genre01.Name = "Genre01";
-            this.Genre01.Size = new System.Drawing.Size(36, 13);
+            this.Genre01.Size = new System.Drawing.Size(57, 25);
             this.Genre01.TabIndex = 2;
-            this.Genre01.Text = "Genre";
+            this.Genre01.Text = "RPG";
             // 
             // Title01
             // 
             this.Title01.AutoSize = true;
-            this.Title01.Location = new System.Drawing.Point(3, 106);
+            this.Title01.Location = new System.Drawing.Point(6, 204);
+            this.Title01.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Title01.Name = "Title01";
-            this.Title01.Size = new System.Drawing.Size(27, 13);
+            this.Title01.Size = new System.Drawing.Size(167, 25);
             this.Title01.TabIndex = 1;
-            this.Title01.Text = "Title";
+            this.Title01.Text = "Deus Ex  (2000)";
             // 
             // gameArt01
             // 
             this.gameArt01.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.gameArt01.Image = ((System.Drawing.Image)(resources.GetObject("gameArt01.Image")));
             this.gameArt01.Location = new System.Drawing.Point(0, 0);
+            this.gameArt01.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.gameArt01.Name = "gameArt01";
-            this.gameArt01.Size = new System.Drawing.Size(103, 104);
+            this.gameArt01.Size = new System.Drawing.Size(204, 198);
+            this.gameArt01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gameArt01.TabIndex = 0;
             this.gameArt01.TabStop = false;
             // 
             // GamePanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.GameInstance01);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "GamePanel";
-            this.Size = new System.Drawing.Size(113, 183);
+            this.Size = new System.Drawing.Size(226, 352);
             this.GameInstance01.ResumeLayout(false);
             this.GameInstance01.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gameArt01)).EndInit();

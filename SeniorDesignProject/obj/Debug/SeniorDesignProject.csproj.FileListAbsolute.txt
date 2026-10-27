@@ -41,3 +41,4 @@ C:\Dev\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.csproj.Gene
 C:\Dev\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.csproj.CoreCompileInputs.cache
 C:\Dev\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.exe
 C:\Dev\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.pdb
+C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\Debug\SeniorDesignProject.MainScreenPreset.resources
