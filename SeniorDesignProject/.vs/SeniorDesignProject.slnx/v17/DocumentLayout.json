@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|c:\\users\\thega\\desktop\\gamershoard\\seniordesignproject\\gamepanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|c:\\users\\thega\\desktop\\gamershoard\\seniordesignproject\\databasetool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:databasetool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\gamepanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:gamepanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -66,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,7 +106,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "DatabaseTool.cs",
+              "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\DatabaseTool.cs",
+              "RelativeDocumentMoniker": "DatabaseTool.cs",
+              "ToolTip": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\DatabaseTool.cs",
+              "RelativeToolTip": "DatabaseTool.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T15:00:14.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "GameSearch.cs [Design]",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\GameSearch.cs",
               "RelativeDocumentMoniker": "GameSearch.cs",
@@ -114,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GamePanel.Designer.cs",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\GamePanel.Designer.cs",
               "RelativeDocumentMoniker": "GamePanel.Designer.cs",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GameSearch.cs",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\GameSearch.cs",
               "RelativeDocumentMoniker": "GameSearch.cs",
@@ -140,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GamePanel.cs [Design]",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\GamePanel.cs",
               "RelativeDocumentMoniker": "GamePanel.cs",
@@ -152,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "GamePanel.cs",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\GamePanel.cs",
               "RelativeDocumentMoniker": "GamePanel.cs",
@@ -165,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MainScreenPreset.cs [Design]",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\MainScreenPreset.cs",
               "RelativeDocumentMoniker": "MainScreenPreset.cs",
@@ -177,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MainScreenPreset.cs",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\MainScreenPreset.cs",
               "RelativeDocumentMoniker": "MainScreenPreset.cs",
@@ -190,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MainScreen.cs",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\MainScreen.cs",
               "RelativeDocumentMoniker": "MainScreen.cs",
@@ -203,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MainScreen.cs [Design]",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\MainScreen.cs",
               "RelativeDocumentMoniker": "MainScreen.cs",
@@ -215,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "databaseInstance.cs",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\databaseInstance.cs",
               "RelativeDocumentMoniker": "databaseInstance.cs",
@@ -228,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "databaseInstance.Designer.cs",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\databaseInstance.Designer.cs",
               "RelativeDocumentMoniker": "databaseInstance.Designer.cs",
@@ -241,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "MainScreenPreset.Designer.cs",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\MainScreenPreset.Designer.cs",
               "RelativeDocumentMoniker": "MainScreenPreset.Designer.cs",
@@ -254,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MainScreen.Designer.cs",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\MainScreen.Designer.cs",
               "RelativeDocumentMoniker": "MainScreen.Designer.cs",
@@ -267,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\thega\\Desktop\\GamersHoard\\SeniorDesignProject\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
