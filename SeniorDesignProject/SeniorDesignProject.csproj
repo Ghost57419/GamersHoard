@@ -124,6 +124,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Theme.cs" />
     <EmbeddedResource Include="databaseInstance.resx">
       <DependentUpon>databaseInstance.cs</DependentUpon>
     </EmbeddedResource>

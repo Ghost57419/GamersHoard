@@ -9,6 +9,8 @@ namespace SeniorDesignProject
         {
             InitializeComponent();
 
+            ApplyTheme();
+
             // Insert logic to see if there is an instance of a database to actually display
             int tempDatabase = 1;
 
@@ -39,6 +41,32 @@ namespace SeniorDesignProject
                 GameDisplayPnl.Controls.Add(gdp);
             }
 
+        }
+
+        private void ApplyTheme()
+        {
+            this.BackColor = Theme.BgApp;
+
+            // Split container: left sidebar vs. main content
+            splitContainer1.BackColor = Theme.BgApp;
+            splitContainer1.BorderStyle = BorderStyle.None;
+            splitContainer1.Panel1.BackColor = Theme.BgSidebar;
+            splitContainer1.Panel2.BackColor = Theme.BgApp;
+
+            // Panels
+            databaseContainer.BackColor = Theme.BgSurface;
+            databaseContainer.BorderStyle = BorderStyle.None;
+            GameDisplayPnl.BackColor = Theme.BgApp;
+
+            // Buttons
+            Theme.StyleButton(btnNewLib, primary: true);
+            Theme.StyleButton(btnHome, primary: false);
+            Theme.StyleButton(btnAdvSer, primary: false);
+            Theme.StyleButton(button1, primary: false);
+
+            // Search Boxes
+            Theme.StyleTextBox(serNav);
+            Theme.StyleTextBox(serRec);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -87,6 +115,11 @@ namespace SeniorDesignProject
         }
 
         private void gameArt01_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
         {
 
         }
