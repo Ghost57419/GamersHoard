@@ -7,7 +7,15 @@
       "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:scraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|c:\\dev\\gamershoard\\seniordesignproject\\databaseinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Dev\\GamersHoard\\SeniorDesignProject\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Dev\\GamersHoard\\SeniorDesignProject\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Dev\\GamersHoard\\SeniorDesignProject\\databaseinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:databaseinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -39,14 +47,6 @@
       "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:mainscreenpreset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Dev\\GamersHoard\\SeniorDesignProject\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Dev\\GamersHoard\\SeniorDesignProject\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Dev\\GamersHoard\\SeniorDesignProject\\mainscreenpreset.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:mainscreenpreset.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
@@ -76,27 +76,39 @@
               "RelativeDocumentMoniker": "Scraper.cs",
               "ToolTip": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\Scraper.cs",
               "RelativeToolTip": "Scraper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-27T15:23:58.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "databaseInstance.cs",
-              "DocumentMoniker": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\databaseInstance.cs",
-              "RelativeDocumentMoniker": "databaseInstance.cs",
-              "ToolTip": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\databaseInstance.cs",
-              "RelativeToolTip": "databaseInstance.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "MainScreen.cs [Design]",
+              "DocumentMoniker": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\MainScreen.cs",
+              "RelativeDocumentMoniker": "MainScreen.cs",
+              "ToolTip": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\MainScreen.cs [Design]",
+              "RelativeToolTip": "MainScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T06:54:35.263Z",
+              "WhenOpened": "2026-10-20T14:22:31.384Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainScreen.cs",
+              "DocumentMoniker": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\MainScreen.cs",
+              "RelativeDocumentMoniker": "MainScreen.cs",
+              "ToolTip": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\MainScreen.cs",
+              "RelativeToolTip": "MainScreen.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwFsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T14:21:29.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "databaseInstance.cs [Design]",
               "DocumentMoniker": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\databaseInstance.cs",
               "RelativeDocumentMoniker": "databaseInstance.cs",
@@ -107,7 +119,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "databaseInstance.cs",
+              "DocumentMoniker": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\databaseInstance.cs",
+              "RelativeDocumentMoniker": "databaseInstance.cs",
+              "ToolTip": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\databaseInstance.cs",
+              "RelativeToolTip": "databaseInstance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T06:54:35.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "GamePanel.cs [Design]",
               "DocumentMoniker": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\GamePanel.cs",
               "RelativeDocumentMoniker": "GamePanel.cs",
@@ -118,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "GamePanel.cs",
               "DocumentMoniker": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\GamePanel.cs",
               "RelativeDocumentMoniker": "GamePanel.cs",
@@ -130,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "GameSearch.cs [Design]",
               "DocumentMoniker": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\GameSearch.cs",
               "RelativeDocumentMoniker": "GameSearch.cs",
@@ -141,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "GameSearch.cs",
               "DocumentMoniker": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\GameSearch.cs",
               "RelativeDocumentMoniker": "GameSearch.cs",
@@ -153,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "MainScreenPreset.cs",
               "DocumentMoniker": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\MainScreenPreset.cs",
               "RelativeDocumentMoniker": "MainScreenPreset.cs",
@@ -165,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MainScreenPreset.cs [Design]",
               "DocumentMoniker": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\MainScreenPreset.cs",
               "RelativeDocumentMoniker": "MainScreenPreset.cs",
@@ -173,29 +197,6 @@
               "RelativeToolTip": "MainScreenPreset.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-22T06:29:30.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainScreen.cs [Design]",
-              "DocumentMoniker": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\MainScreen.cs",
-              "RelativeDocumentMoniker": "MainScreen.cs",
-              "ToolTip": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\MainScreen.cs [Design]",
-              "RelativeToolTip": "MainScreen.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T14:22:31.384Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainScreen.cs",
-              "DocumentMoniker": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\MainScreen.cs",
-              "RelativeDocumentMoniker": "MainScreen.cs",
-              "ToolTip": "C:\\Dev\\GamersHoard\\SeniorDesignProject\\MainScreen.cs",
-              "RelativeToolTip": "MainScreen.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAA7wG4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T14:21:29.743Z"
             },
             {
               "$type": "Document",
@@ -230,7 +231,8 @@
               "RelativeToolTip": "MainScreen.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T06:24:49.508Z"
+              "WhenOpened": "2026-10-22T06:24:49.508Z",
+              "EditorCaption": ""
             }
           ]
         }

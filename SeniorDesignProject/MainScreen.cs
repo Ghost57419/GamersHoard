@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HtmlAgilityPack;
 
 namespace SeniorDesignProject
 {
@@ -76,15 +77,21 @@ namespace SeniorDesignProject
 
         }
 
-        private void MainScreen_Load(object sender, EventArgs e)
+        private async void MainScreen_Load(object sender, EventArgs e)
         {
-            //MainScreenPreset userControlObject = new MainScreenPreset();
+            Scraper scraper = new Scraper();
 
-            //Form.ActiveForm.Controls.Clear();
+            HtmlNodeCollection products = await scraper.GetResponseAsync();
 
-            //userControlObject.Dock = DockStyle.Fill;
+            if(products != null && products.Count > 0)
+            {
+                MessageBox.Show($"Successfully found {products.Count} products!");
+            }
+            else
+            {
+                MessageBox.Show("No products found.");
+            }
 
-            //Form.ActiveForm.Controls.Add(userControlObject);
         }
     }
 }
