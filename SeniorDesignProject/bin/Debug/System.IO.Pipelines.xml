@@ -15,9 +15,9 @@
         <see langword="true" /> to indicate the reader is no longer reading data written to the <see cref="T:System.IO.Pipelines.PipeWriter" />.</param>
     </member>
     <member name="P:System.IO.Pipelines.FlushResult.IsCanceled">
-      <summary>Gets a value that indicates whether the current <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation was canceled.</summary>
+      <summary>Gets a value that indicates whether the current <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation was canceled by <see cref="M:System.IO.Pipelines.PipeWriter.CancelPendingFlush" />.</summary>
       <returns>
-        <see langword="true" /> if the current <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation was canceled; otherwise, <see langword="false" />.</returns>
+        <see langword="true" /> if the current <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation was canceled by <see cref="M:System.IO.Pipelines.PipeWriter.CancelPendingFlush" />; otherwise, <see langword="false" />.</returns>
     </member>
     <member name="P:System.IO.Pipelines.FlushResult.IsCompleted">
       <summary>Gets a value that indicates the reader is no longer reading data written to the <see cref="T:System.IO.Pipelines.PipeWriter" />.</summary>
@@ -77,7 +77,7 @@
       <returns>The minimum size of the segment requested from the <see cref="P:System.IO.Pipelines.PipeOptions.Pool" />.</returns>
     </member>
     <member name="P:System.IO.Pipelines.PipeOptions.PauseWriterThreshold">
-      <summary>Gets the number of bytes in the <see cref="T:System.IO.Pipelines.Pipe" /> when <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> starts blocking.</summary>
+      <summary>Gets the number of bytes in the <see cref="T:System.IO.Pipelines.Pipe" /> when <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> starts blocking. A value of zero prevents <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> from ever blocking, effectively making the number of bytes in the <see cref="T:System.IO.Pipelines.Pipe" /> unlimited.</summary>
       <returns>The number of bytes in the <see cref="T:System.IO.Pipelines.Pipe" /> when <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> starts blocking.</returns>
     </member>
     <member name="P:System.IO.Pipelines.PipeOptions.Pool">
@@ -107,14 +107,14 @@
     <member name="M:System.IO.Pipelines.PipeReader.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.IO.Pipelines.PipeReader" /> class.</summary>
     </member>
-    <member name="M:System.IO.Pipelines.PipeReader.AdvanceTo(System.SequencePosition)">
-      <summary>Moves forward the pipeline's read cursor to after the consumed data, marking the data as processed.</summary>
-      <param name="consumed">Marks the extent of the data that has been successfully processed.</param>
-    </member>
     <member name="M:System.IO.Pipelines.PipeReader.AdvanceTo(System.SequencePosition,System.SequencePosition)">
       <summary>Moves forward the pipeline's read cursor to after the consumed data, marking the data as processed, read and examined.</summary>
       <param name="consumed">Marks the extent of the data that has been successfully processed.</param>
       <param name="examined">Marks the extent of the data that has been read and examined.</param>
+    </member>
+    <member name="M:System.IO.Pipelines.PipeReader.AdvanceTo(System.SequencePosition)">
+      <summary>Moves forward the pipeline's read cursor to after the consumed data, marking the data as processed.</summary>
+      <param name="consumed">Marks the extent of the data that has been successfully processed.</param>
     </member>
     <member name="M:System.IO.Pipelines.PipeReader.AsStream(System.Boolean)">
       <summary>Returns a <see cref="T:System.IO.Stream" /> representation of the <see cref="T:System.IO.Pipelines.PipeReader" />.</summary>
@@ -122,7 +122,7 @@
       <returns>A stream that represents the <see cref="T:System.IO.Pipelines.PipeReader" />.</returns>
     </member>
     <member name="M:System.IO.Pipelines.PipeReader.CancelPendingRead">
-      <summary>Cancels to currently pending or if none is pending next call to <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" />, without completing the <see cref="T:System.IO.Pipelines.PipeReader" />.</summary>
+      <summary>Cancels the pending <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" /> operation without causing it to throw and without completing the <see cref="T:System.IO.Pipelines.PipeReader" />. If there is no pending operation, this cancels the next operation.</summary>
     </member>
     <member name="M:System.IO.Pipelines.PipeReader.Complete(System.Exception)">
       <summary>Signals to the producer that the consumer is done reading.</summary>
@@ -134,16 +134,23 @@
       <returns>A value task that represents the asynchronous complete operation.</returns>
     </member>
     <member name="M:System.IO.Pipelines.PipeReader.CopyToAsync(System.IO.Pipelines.PipeWriter,System.Threading.CancellationToken)">
-      <summary>Asynchronously reads the bytes from the <see cref="T:System.IO.Pipelines.PipeReader" /> and writes them to the specified <see cref="T:System.IO.Pipelines.PipeWriter" />, using a specified buffer size and cancellation token.</summary>
+      <summary>Asynchronously reads the bytes from the <see cref="T:System.IO.Pipelines.PipeReader" /> and writes them to the specified <see cref="T:System.IO.Pipelines.PipeWriter" />, using a specified cancellation token.</summary>
       <param name="destination">The pipe writer to which the contents of the current stream will be copied.</param>
       <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+      <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>A task that represents the asynchronous copy operation.</returns>
     </member>
     <member name="M:System.IO.Pipelines.PipeReader.CopyToAsync(System.IO.Stream,System.Threading.CancellationToken)">
       <summary>Asynchronously reads the bytes from the <see cref="T:System.IO.Pipelines.PipeReader" /> and writes them to the specified stream, using a specified cancellation token.</summary>
       <param name="destination">The stream to which the contents of the current stream will be copied.</param>
       <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+      <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>A task that represents the asynchronous copy operation.</returns>
+    </member>
+    <member name="M:System.IO.Pipelines.PipeReader.Create(System.Buffers.ReadOnlySequence{System.Byte})">
+      <summary>Creates a <see cref="T:System.IO.Pipelines.PipeReader" /> wrapping the specified <see cref="T:System.Buffers.ReadOnlySequence`1" />.</summary>
+      <param name="sequence">The sequence to wrap.</param>
+      <returns>A <see cref="T:System.IO.Pipelines.PipeReader" /> that wraps the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</returns>
     </member>
     <member name="M:System.IO.Pipelines.PipeReader.Create(System.IO.Stream,System.IO.Pipelines.StreamPipeReaderOptions)">
       <summary>Creates a <see cref="T:System.IO.Pipelines.PipeReader" /> wrapping the specified <see cref="T:System.IO.Stream" />.</summary>
@@ -159,6 +166,21 @@
     <member name="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)">
       <summary>Asynchronously reads a sequence of bytes from the current <see cref="T:System.IO.Pipelines.PipeReader" />.</summary>
       <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see langword="default" />.</param>
+      <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
+      <returns>A <see cref="T:System.Threading.Tasks.ValueTask`1" /> representing the asynchronous read operation.</returns>
+    </member>
+    <member name="M:System.IO.Pipelines.PipeReader.ReadAtLeastAsync(System.Int32,System.Threading.CancellationToken)">
+      <summary>Asynchronously reads a sequence of bytes from the current <see cref="T:System.IO.Pipelines.PipeReader" />.</summary>
+      <param name="minimumSize">The minimum length that needs to be buffered in order for the call to return.</param>
+      <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see langword="default" />.</param>
+      <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
+      <returns>A <see cref="T:System.Threading.Tasks.ValueTask`1" /> representing the asynchronous read operation.</returns>
+    </member>
+    <member name="M:System.IO.Pipelines.PipeReader.ReadAtLeastAsyncCore(System.Int32,System.Threading.CancellationToken)">
+      <summary>Asynchronously reads a sequence of bytes from the current <see cref="T:System.IO.Pipelines.PipeReader" />.</summary>
+      <param name="minimumSize">The minimum length that needs to be buffered in order for the call to return.</param>
+      <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see langword="default" />.</param>
+      <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>A <see cref="T:System.Threading.Tasks.ValueTask`1" /> representing the asynchronous read operation.</returns>
     </member>
     <member name="M:System.IO.Pipelines.PipeReader.TryRead(System.IO.Pipelines.ReadResult@)">
@@ -193,7 +215,7 @@
       <summary>Initializes a new instance of the class.</summary>
     </member>
     <member name="M:System.IO.Pipelines.PipeWriter.Advance(System.Int32)">
-      <summary>Notifies the <see cref="T:System.IO.Pipelines.PipeWriter" /> that <paramref name="bytes" /> bytes were written to the output <see cref="T:System.Span`1" /> or <see cref="T:System.Memory`1" />. You must request a new buffer after calling <see cref="M:System.IO.Pipelines.PipeWriter.Advance(System.Int32)" /> to continue writing more data; you cannot write to a previously acquired buffer.</summary>
+      <summary>Notifies the <see cref="T:System.IO.Pipelines.PipeWriter" /> that <paramref name="bytes" /> bytes were written to the output <see cref="T:System.Span`1" /> or <see cref="T:System.Memory`1" />. You must call <see cref="M:System.IO.Pipelines.PipeWriter.GetSpan(System.Int32)" /> or <see cref="M:System.IO.Pipelines.PipeWriter.GetMemory(System.Int32)" /> again and use the returned buffer to continue writing more data after calling <see cref="M:System.IO.Pipelines.PipeWriter.Advance(System.Int32)" />; you cannot write to a previously acquired buffer.</summary>
       <param name="bytes">The number of bytes written to the <see cref="T:System.Span`1" /> or <see cref="T:System.Memory`1" />.</param>
     </member>
     <member name="M:System.IO.Pipelines.PipeWriter.AsStream(System.Boolean)">
@@ -202,7 +224,7 @@
       <returns>A stream that represents the <see cref="T:System.IO.Pipelines.PipeWriter" />.</returns>
     </member>
     <member name="M:System.IO.Pipelines.PipeWriter.CancelPendingFlush">
-      <summary>Cancels the pending <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation. If there is none, cancels next <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation, without completing the <see cref="T:System.IO.Pipelines.PipeWriter" />.</summary>
+      <summary>Cancels the pending <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> or <see cref="M:System.IO.Pipelines.PipeWriter.WriteAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)" /> operation without causing the operation to throw and without completing the <see cref="T:System.IO.Pipelines.PipeWriter" />. If there is no pending operation, this cancels the next operation.</summary>
     </member>
     <member name="M:System.IO.Pipelines.PipeWriter.Complete(System.Exception)">
       <summary>Marks the <see cref="T:System.IO.Pipelines.PipeWriter" /> as being complete, meaning no more items will be written to it.</summary>
@@ -217,6 +239,7 @@
       <summary>Asynchronously reads the bytes from the specified stream and writes them to the <see cref="T:System.IO.Pipelines.PipeWriter" />.</summary>
       <param name="source">The stream from which the contents will be copied.</param>
       <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+      <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>A task that represents the asynchronous copy operation.</returns>
     </member>
     <member name="M:System.IO.Pipelines.PipeWriter.Create(System.IO.Stream,System.IO.Pipelines.StreamPipeWriterOptions)">
@@ -228,6 +251,7 @@
     <member name="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)">
       <summary>Makes bytes written available to <see cref="T:System.IO.Pipelines.PipeReader" /> and runs <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" /> continuation.</summary>
       <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+      <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>A task that represents and wraps the asynchronous flush operation.</returns>
     </member>
     <member name="M:System.IO.Pipelines.PipeWriter.GetMemory(System.Int32)">
@@ -251,7 +275,17 @@
       <summary>Writes the specified byte memory range to the pipe and makes data accessible to the <see cref="T:System.IO.Pipelines.PipeReader" />.</summary>
       <param name="source">The read-only byte memory region to write.</param>
       <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+      <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>A task that represents the asynchronous write operation, and wraps the flush asynchronous operation.</returns>
+    </member>
+    <member name="P:System.IO.Pipelines.PipeWriter.CanGetUnflushedBytes">
+      <summary>Gets a value that indicates whether the current <see cref="T:System.IO.Pipelines.PipeWriter" /> supports reporting the count of unflushed bytes.</summary>
+      <returns>
+        <see langword="true" />If a class derived from <see cref="T:System.IO.Pipelines.PipeWriter" /> does not support getting the unflushed bytes, calls to <see cref="P:System.IO.Pipelines.PipeWriter.UnflushedBytes" /> throw <see cref="T:System.NotImplementedException" />.</returns>
+    </member>
+    <member name="P:System.IO.Pipelines.PipeWriter.UnflushedBytes">
+      <summary>When overridden in a derived class, gets the count of unflushed bytes within the current writer.</summary>
+      <exception cref="T:System.NotImplementedException">The <see cref="T:System.IO.Pipelines.PipeWriter" /> does not support getting the unflushed byte count.</exception>
     </member>
     <member name="T:System.IO.Pipelines.ReadResult">
       <summary>Represents the result of a <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" /> call.</summary>
@@ -267,7 +301,7 @@
       <returns>A read-only sequence containing the bytes of data that were read in the <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" /> call.</returns>
     </member>
     <member name="P:System.IO.Pipelines.ReadResult.IsCanceled">
-      <summary>Gets a value that indicates whether the current <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" /> operation was canceled.</summary>
+      <summary>Gets a value that indicates whether the current <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" /> operation was canceled by <see cref="M:System.IO.Pipelines.PipeReader.CancelPendingRead" />.</summary>
       <returns>
         <see langword="true" /> if the <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" /> operation that produced this <see cref="T:System.IO.Pipelines.ReadResult" /> was canceled by <see cref="M:System.IO.Pipelines.PipeReader.CancelPendingRead" />; otherwise, <see langword="false" />.</returns>
     </member>
@@ -284,10 +318,21 @@
       <param name="source">The stream from which the contents of the current stream will be copied.</param>
       <param name="destination">The writer to which the contents of the source stream will be copied.</param>
       <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+      <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       <returns>A task that represents the asynchronous copy operation.</returns>
     </member>
     <member name="T:System.IO.Pipelines.StreamPipeReaderOptions">
       <summary>Represents a set of options for controlling the creation of the <see cref="T:System.IO.Pipelines.PipeReader" />.</summary>
+    </member>
+    <member name="M:System.IO.Pipelines.StreamPipeReaderOptions.#ctor(System.Buffers.MemoryPool{System.Byte},System.Int32,System.Int32,System.Boolean,System.Boolean)">
+      <summary>Initializes a <see cref="T:System.IO.Pipelines.StreamPipeReaderOptions" /> instance, optionally specifying a memory pool, a minimum buffer size, a minimum read size, and whether the underlying stream should be left open after the <see cref="T:System.IO.Pipelines.PipeReader" /> completes.</summary>
+      <param name="pool">The memory pool to use when allocating memory. The default value is <see langword="null" />.</param>
+      <param name="bufferSize">The minimum buffer size to use when renting memory from the <paramref name="pool" />. The default value is 4096.</param>
+      <param name="minimumReadSize">The threshold of remaining bytes in the buffer before a new buffer is allocated. The default value is 1024.</param>
+      <param name="leaveOpen">
+        <see langword="true" /> to leave the underlying stream open after the <see cref="T:System.IO.Pipelines.PipeReader" /> completes; <see langword="false" /> to close it. The default is <see langword="false" />.</param>
+      <param name="useZeroByteReads">
+        <see langword="true" /> if reads with an empty buffer should be issued to the underlying stream before allocating memory; otherwise, <see langword="false" />.</param>
     </member>
     <member name="M:System.IO.Pipelines.StreamPipeReaderOptions.#ctor(System.Buffers.MemoryPool{System.Byte},System.Int32,System.Int32,System.Boolean)">
       <summary>Initializes a <see cref="T:System.IO.Pipelines.StreamPipeReaderOptions" /> instance, optionally specifying a memory pool, a minimum buffer size, a minimum read size, and whether the underlying stream should be left open after the <see cref="T:System.IO.Pipelines.PipeReader" /> completes.</summary>
@@ -313,6 +358,11 @@
     <member name="P:System.IO.Pipelines.StreamPipeReaderOptions.Pool">
       <summary>Gets the <see cref="T:System.Buffers.MemoryPool`1" /> to use when allocating memory.</summary>
       <returns>A memory pool instance.</returns>
+    </member>
+    <member name="P:System.IO.Pipelines.StreamPipeReaderOptions.UseZeroByteReads">
+      <summary>Gets the value that indicates if reads with an empty buffer should be issued to the underlying stream, in order to wait for data to arrive before allocating memory.</summary>
+      <returns>
+        <see langword="true" /> if reads with an empty buffer should be issued to the underlying stream before allocating memory; otherwise, <see langword="false" />.</returns>
     </member>
     <member name="T:System.IO.Pipelines.StreamPipeWriterOptions">
       <summary>Represents a set of options for controlling the creation of the <see cref="T:System.IO.Pipelines.PipeWriter" />.</summary>

@@ -4388,6 +4388,22 @@
         <member name="T:Google.Protobuf.Reflection.CSharpFeaturesExtensions">
             <summary>Holder for extension identifiers generated from the top level of google/protobuf/c_sharp_features.proto</summary>
         </member>
+        <member name="F:Google.Protobuf.Reflection.CSharpFeatures.NullableReferenceTypesFieldNumber">
+            <summary>Field number for the "nullable_reference_types" field.</summary>
+        </member>
+        <member name="P:Google.Protobuf.Reflection.CSharpFeatures.NullableReferenceTypes">
+            <summary>
+            Whether the generated files should have nullable reference type annotations.
+            When enabled, the generated C# code includes `#nullable enable annotations`
+            and annotates message-typed properties and certain parameters with `?`.
+            </summary>
+        </member>
+        <member name="P:Google.Protobuf.Reflection.CSharpFeatures.HasNullableReferenceTypes">
+            <summary>Gets whether the "nullable_reference_types" field is set</summary>
+        </member>
+        <member name="M:Google.Protobuf.Reflection.CSharpFeatures.ClearNullableReferenceTypes">
+            <summary>Clears the value of the "nullable_reference_types" field</summary>
+        </member>
         <member name="T:Google.Protobuf.Reflection.CustomOptions">
             <summary>
             Container for a set of custom options specified within a message, field etc.
@@ -6736,6 +6752,15 @@
         <member name="M:Google.Protobuf.Reflection.FeatureSet.ClearDefaultSymbolVisibility">
             <summary>Clears the value of the "default_symbol_visibility" field</summary>
         </member>
+        <member name="F:Google.Protobuf.Reflection.FeatureSet.EnforceProtoLimitsFieldNumber">
+            <summary>Field number for the "enforce_proto_limits" field.</summary>
+        </member>
+        <member name="P:Google.Protobuf.Reflection.FeatureSet.HasEnforceProtoLimits">
+            <summary>Gets whether the "enforce_proto_limits" field is set</summary>
+        </member>
+        <member name="M:Google.Protobuf.Reflection.FeatureSet.ClearEnforceProtoLimits">
+            <summary>Clears the value of the "enforce_proto_limits" field</summary>
+        </member>
         <member name="T:Google.Protobuf.Reflection.FeatureSet.Types">
             <summary>Container for nested types declared in the FeatureSet message type.</summary>
         </member>
@@ -6762,6 +6787,23 @@
             All symbols local by default. Nested types cannot be exported.
             With special case caveat for message { enum {} reserved 1 to max; }
             This is the recommended setting for new protos.
+            </summary>
+        </member>
+        <member name="T:Google.Protobuf.Reflection.FeatureSet.Types.ProtoLimitsFeature.Types">
+            <summary>Container for nested types declared in the ProtoLimitsFeature message type.</summary>
+        </member>
+        <member name="F:Google.Protobuf.Reflection.FeatureSet.Types.ProtoLimitsFeature.Types.EnforceProtoLimits.LegacyNoExplicitLimits">
+            <summary>
+            Default pre-EDITION_2026: there are no limit enforcement at the protoc
+            level. Practical limits still exist, but they will tend to fail while
+            compiling protoc-generated code, and these limits tend to be language
+            or toolchain specific.
+            </summary>
+        </member>
+        <member name="F:Google.Protobuf.Reflection.FeatureSet.Types.ProtoLimitsFeature.Types.EnforceProtoLimits.ProtoLimits2026">
+            <summary>
+            A set of limits enforced by Edition 2026 by default. For a detailed
+            list of all the limits please consult the Edition 2026 documentation.
             </summary>
         </member>
         <member name="T:Google.Protobuf.Reflection.FeatureSetDefaults">
@@ -6928,6 +6970,23 @@
                [ 4, 3, 2, 7 ]
              this path refers to the whole field declaration (from the beginning
              of the label to the terminating semicolon).
+            
+             For options, the path refers to the interpreted option in the descriptor.
+             E.g., for a custom option `(my_opt) = "foo"` on a message using extension
+             number 10101, the path is:
+               [ 4, 3, 7, 10101 ]
+             refers to:
+               file.message_type(3)     // 4, 3
+                   .options()           // 7
+                   .my_opt()            // 10101
+            
+             Sub-locations corresponding to the interpreted option's corresponding
+             `UninterpretedOption` are also appended to the interpreted option, which
+             deviates from the actual FileDescriptorProto path. E.g.:
+               [ 4, 3, 7, 10101, 2 ]
+             refers to the option name `(my_opt)`, and:
+               [ 4, 3, 7, 10101, 7 ]
+             refers to the "foo" string value of the option.
              </summary>
         </member>
         <member name="F:Google.Protobuf.Reflection.SourceCodeInfo.Types.Location.SpanFieldNumber">
@@ -7837,6 +7896,11 @@
             Describes a .proto file, including everything defined within.
             IDescriptor is implemented such that the File property returns this descriptor,
             and the FullName is the same as the Name.
+            </summary>
+        </member>
+        <member name="M:Google.Protobuf.Reflection.FileDescriptor.DisableExtensionCaching">
+            <summary>
+            Disables caching of discovered extensions. Greatly reduces performance in highly nested protos but lowers the memory usage.
             </summary>
         </member>
         <member name="M:Google.Protobuf.Reflection.FileDescriptor.ComputeFullName(Google.Protobuf.Reflection.MessageDescriptor,System.String)">
@@ -10219,9 +10283,9 @@
              the null value for the `Value` type union.
             
              A field of type `NullValue` with any value other than `0` is considered
-             invalid. Most ProtoJSON serializers will emit a Value with a `null_value` set
-             as a JSON `null` regardless of the integer value, and so will round trip to
-             a `0` value.
+             invalid. Most ProtoJSON serializers will emit a `Value` with a `null_value`
+             set as a JSON `null` regardless of the integer value, and so will round trip
+             to a `0` value.
              </summary>
         </member>
         <member name="F:Google.Protobuf.WellKnownTypes.NullValue.NullValue">
@@ -12046,6 +12110,42 @@
             <summary>
             Gets or sets the justification for suppressing the code analysis message.
             </summary>
+        </member>
+        <member name="T:Pb.Enumvalue.JsonEnumvalueOptionsReflection">
+            <summary>Holder for reflection information generated from google/protobuf/json_enumvalue_options.proto</summary>
+        </member>
+        <member name="P:Pb.Enumvalue.JsonEnumvalueOptionsReflection.Descriptor">
+            <summary>File descriptor for google/protobuf/json_enumvalue_options.proto</summary>
+        </member>
+        <member name="T:Pb.Enumvalue.JsonEnumvalueOptionsExtensions">
+            <summary>Holder for extension identifiers generated from the top level of google/protobuf/json_enumvalue_options.proto</summary>
+        </member>
+        <member name="F:Pb.Enumvalue.JsonEnumValueOptions.StringFieldNumber">
+            <summary>Field number for the "string" field.</summary>
+        </member>
+        <member name="P:Pb.Enumvalue.JsonEnumValueOptions.String">
+             <summary>
+             Allows user to specify a custom string to use when serializing an enum
+             value to JSON.
+            
+             Sample usage:
+             enum Foo {
+               ...
+               FOO_BAR = 42 [(pb.enumvalue.json).string = "my_custom_name"];
+             }
+             </summary>
+        </member>
+        <member name="P:Pb.Enumvalue.JsonEnumValueOptions.HasString">
+            <summary>Gets whether the "string" field is set</summary>
+        </member>
+        <member name="M:Pb.Enumvalue.JsonEnumValueOptions.ClearString">
+            <summary>Clears the value of the "string" field</summary>
+        </member>
+        <member name="T:Pb.JsonOptionsReflection">
+            <summary>Holder for reflection information generated from google/protobuf/json_options.proto</summary>
+        </member>
+        <member name="P:Pb.JsonOptionsReflection.Descriptor">
+            <summary>File descriptor for google/protobuf/json_options.proto</summary>
         </member>
     </members>
 </doc>
