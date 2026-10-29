@@ -10,11 +10,36 @@ using System.Windows.Forms;
 
 namespace SeniorDesignProject
 {
-    public partial class GamePanel : UserControl
+    public partial class gamePanel : UserControl
     {
-        public GamePanel()
+        public gamePanel()
         {
             InitializeComponent();
+            ApplyTheme();
+        }
+
+        private void ApplyTheme()
+        {
+            // The back of the control
+            this.BackColor = Theme.BgApp;
+
+            // Card
+            gameInstance.BackColor = Theme.BgSurface;
+            gameInstance.BorderStyle = BorderStyle.None;
+
+            // Cover art
+            gameArt.BorderStyle = BorderStyle.None;
+            gameArt.BackColor = Theme.BgSidebar;
+
+            // Text
+            title.BackColor = Color.Transparent;
+            title.ForeColor = Theme.TextPrimary;
+            genre.BackColor = Color.Transparent;
+            genre.ForeColor = Theme.TextSecondary;
+
+            // Button
+            Theme.StyleButton(gameDetails, primary: true);
+
         }
 
         private void gameDetails01_Click(object sender, EventArgs e)

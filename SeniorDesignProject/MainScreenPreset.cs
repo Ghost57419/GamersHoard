@@ -36,7 +36,7 @@ namespace SeniorDesignProject
             {
                 GameDisplayPnl.Visible = true;
 
-                GamePanel gdp = new GamePanel();
+                gamePanel gdp = new gamePanel();
 
                 GameDisplayPnl.Controls.Add(gdp);
             }
