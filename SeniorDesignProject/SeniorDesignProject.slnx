@@ -1,3 +1,9 @@
 <Solution>
-  <Project Path="SeniorDesignProject.csproj" Id="27bcd17e-9de0-4aa1-809e-d7c955ba7ac8" />
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="SeniorDesignProject.csproj" Id="27bcd17e-9de0-4aa1-809e-d7c955ba7ac8">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
 </Solution>

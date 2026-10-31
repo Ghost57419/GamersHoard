@@ -1,0 +1,36 @@
+10/31/2026 2:50:48 PMSystem.InvalidOperationException: Handle is not initialized.
+   at System.WeakReference`1.set_Target(T value)
+   at Microsoft.Data.Sqlite.SqliteConnectionInternal.Deactivate()
+   at Microsoft.Data.Sqlite.SqliteConnectionPool.Return(SqliteConnectionInternal connection)
+   at Microsoft.Data.Sqlite.SqliteConnection.Close()
+   at SeniorDesignProject.DatabaseTool.Finalize()
+10/31/2026 2:50:48 PMSystem.InvalidOperationException: Handle is not initialized.
+   at System.WeakReference`1.set_Target(T value)
+   at Microsoft.Data.Sqlite.SqliteConnectionInternal.Deactivate()
+   at Microsoft.Data.Sqlite.SqliteConnectionPool.Return(SqliteConnectionInternal connection)
+   at Microsoft.Data.Sqlite.SqliteConnection.Close()
+   at SeniorDesignProject.DatabaseTool.Finalize()
+10/31/2026 2:52:56 PMSystem.InvalidOperationException: Handle is not initialized.
+   at System.WeakReference`1.set_Target(T value)
+   at Microsoft.Data.Sqlite.SqliteConnectionInternal.Deactivate()
+   at Microsoft.Data.Sqlite.SqliteConnectionPool.Return(SqliteConnectionInternal connection)
+   at Microsoft.Data.Sqlite.SqliteConnection.Close()
+   at SeniorDesignProject.DatabaseTool.Finalize()
+10/31/2026 2:52:56 PMSystem.InvalidOperationException: Handle is not initialized.
+   at System.WeakReference`1.set_Target(T value)
+   at Microsoft.Data.Sqlite.SqliteConnectionInternal.Deactivate()
+   at Microsoft.Data.Sqlite.SqliteConnectionPool.Return(SqliteConnectionInternal connection)
+   at Microsoft.Data.Sqlite.SqliteConnection.Close()
+   at SeniorDesignProject.DatabaseTool.Finalize()
+10/31/2026 2:55:25 PMSystem.InvalidOperationException: Handle is not initialized.
+   at System.WeakReference`1.set_Target(T value)
+   at Microsoft.Data.Sqlite.SqliteConnectionInternal.Deactivate()
+   at Microsoft.Data.Sqlite.SqliteConnectionPool.Return(SqliteConnectionInternal connection)
+   at Microsoft.Data.Sqlite.SqliteConnection.Close()
+   at SeniorDesignProject.DatabaseTool.Finalize()
+10/31/2026 2:55:25 PMSystem.InvalidOperationException: Handle is not initialized.
+   at System.WeakReference`1.set_Target(T value)
+   at Microsoft.Data.Sqlite.SqliteConnectionInternal.Deactivate()
+   at Microsoft.Data.Sqlite.SqliteConnectionPool.Return(SqliteConnectionInternal connection)
+   at Microsoft.Data.Sqlite.SqliteConnection.Close()
+   at SeniorDesignProject.DatabaseTool.Finalize()
