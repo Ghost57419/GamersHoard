@@ -45,8 +45,6 @@ namespace SeniorDesignProject
         private void button2_Click(object sender, EventArgs e)
         {
             db = new DatabaseTool("games");
-
-
         }
 
         private void label4_Click(object sender, EventArgs e)

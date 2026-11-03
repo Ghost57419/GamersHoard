@@ -5,6 +5,10 @@ using System.Linq;
 using System.Text;
 using Microsoft.Data.Sqlite;
 
+// GamersHoard\SeniorDesignProject\bin\x64\Debug
+// File location to error logging and location of database
+
+
 namespace SeniorDesignProject
 {
     internal class DatabaseTool
@@ -12,6 +16,8 @@ namespace SeniorDesignProject
 
         private SqliteConnection dbConnection;
         private string errorLog = "error.log";
+        private string tableName;
+        private bool delete = true;
 
         // The default which will assume that the database already exists, if not report the error in a log
         public DatabaseTool() 
@@ -21,7 +27,7 @@ namespace SeniorDesignProject
             string connStr = "Data Source=games.db";
 
             dbConnection = new SqliteConnection(connStr);
-
+            tableName = "games";
 
             try
             {
@@ -40,33 +46,38 @@ namespace SeniorDesignProject
         {
             dbConnection = new SqliteConnection(
             $"Data Source={DatabaseName}.db");
-
+            tableName = DatabaseName;
             try
             {
                 dbConnection.Open();
                 createTable();
+                
             }
             catch (Exception error)
             {
                 logInfo(DateTime.Now.ToString() + error.ToString());    // Logs info to an error log
             }
 
-            Console.Write("Bitch ass was here\n");
 
-            GameInstance temp = new GameInstance("Minecraft", 2.99m, "Did a line of crack off a hookers stomach", "A picture of your dad", "2832 West Avenue Street", 1832.32m);
-            addEntry(temp);
             
         }
 
         ~DatabaseTool()
         {
-            try
+            if (delete == false)
             {
-                dbConnection.Close();
+                try
+                {
+                    dbConnection.Close();
+                }
+                catch (Exception error)
+                {
+                    logInfo(DateTime.Now.ToString() + error.ToString());
+                }
             }
-            catch(Exception error)
+            else
             {
-                logInfo(DateTime.Now.ToString() + error.ToString());
+                deleteDatabase();
             }
         }
 
@@ -93,6 +104,7 @@ namespace SeniorDesignProject
         // Logger function for debugging
         private void logInfo(string message)
         {
+            Console.WriteLine("Logging error");
             message += "\n";
             // Open the file and write the message to it
             if (!File.Exists(errorLog))
@@ -129,22 +141,59 @@ namespace SeniorDesignProject
 
         public void removeEntry(GameInstance game)
         {
+            string commandRemoveElement = $"DELETE FROM {tableName} WHERE Name = \"{game.Name}\";";
 
+            using (SqliteCommand cmd = new SqliteCommand(commandRemoveElement, dbConnection))
+            {
+                cmd.ExecuteNonQuery();
+                Console.WriteLine("Removed an element");
+            }
         }
 
 
         // Might want a safety net to stop possible malicious code
         public void deleteDatabase()
         {
+            string commandDelete = $"DROP TABLE IF EXISTS {tableName};";
+
+            using (SqliteCommand cmd = new SqliteCommand(commandDelete, dbConnection))
+            {
+                cmd.ExecuteNonQuery();
+            }
 
         }
 
 
         // This would not return a string but return the game instance itself
-        public string getGame(string gameName)
+        public GameInstance getGame(string gameName)
         {
+            GameInstance game = null;   // Default value
 
-            return "temp";
+            string commandRemoveElement = $"SELECT * FROM {tableName} WHERE Name = {gameName};";
+
+            using (SqliteCommand cmd = new SqliteCommand(commandRemoveElement, dbConnection))
+            {
+                var reader = cmd.ExecuteReader();
+                Console.WriteLine("Attempting to find element");
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        game.Name = reader.GetString(0);
+                        game.LowestPrice = reader.GetDecimal(1);
+                        game.Description = reader.GetString(2);
+                        game.Image = reader.GetString(3);
+                        game.BestStore = reader.GetString(4);
+                        game.AveragePrice = reader.GetDecimal(5);
+                    }
+                }
+
+
+            }
+
+            return game;
+
         }
 
 
@@ -172,7 +221,6 @@ namespace SeniorDesignProject
                     games.Add(game);
                 }
             }
-            Console.WriteLine("Dumbass was here");
             return games;
         }
 
