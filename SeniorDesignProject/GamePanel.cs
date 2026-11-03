@@ -54,5 +54,10 @@ namespace SeniorDesignProject
             Form.ActiveForm.Controls.Add(game);
 
         }
+
+        private void gameArt_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

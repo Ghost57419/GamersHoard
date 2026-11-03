@@ -49,7 +49,6 @@
             // 
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Enabled = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(6);
             this.splitContainer1.Name = "splitContainer1";
@@ -76,10 +75,10 @@
             // gameName
             // 
             this.gameName.AutoSize = true;
-            this.gameName.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gameName.Font = new System.Drawing.Font("Unispace", 28.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gameName.Location = new System.Drawing.Point(590, 33);
             this.gameName.Name = "gameName";
-            this.gameName.Size = new System.Drawing.Size(285, 76);
+            this.gameName.Size = new System.Drawing.Size(360, 90);
             this.gameName.TabIndex = 1;
             this.gameName.Text = "Deus Ex";
             this.gameName.Click += new System.EventHandler(this.label1_Click);

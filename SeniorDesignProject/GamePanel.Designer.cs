@@ -93,6 +93,7 @@
             this.gameArt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gameArt.TabIndex = 0;
             this.gameArt.TabStop = false;
+            this.gameArt.Click += new System.EventHandler(this.gameArt_Click);
             // 
             // gamePanel
             // 
