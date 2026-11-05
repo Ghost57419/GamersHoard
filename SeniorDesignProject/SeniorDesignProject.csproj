@@ -92,6 +92,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppHost.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="databaseInstance.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\mainscreenpreset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:mainscreenpreset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\gamesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:gamesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\theme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:theme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\mainscreenpreset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:mainscreenpreset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\gamesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:gamesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\gamesearch.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:gamesearch.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|c:\\users\\schin\\desktop\\csstuff\\cs499\\gamershoard\\seniordesignproject\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|c:\\users\\schin\\desktop\\csstuff\\cs499\\gamershoard\\seniordesignproject\\apphost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:apphost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\theme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:theme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\gamepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\gamepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:gamepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|c:\\users\\schin\\desktop\\csstuff\\cs499\\gamershoard\\seniordesignproject\\gamepanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|solutionrelative:gamepanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27BCD17E-9DE0-4AA1-809E-D7C955BA7AC8}|SeniorDesignProject.csproj|C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\databaseinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -46,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,33 +90,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameSearch.cs",
-              "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\GameSearch.cs",
-              "RelativeDocumentMoniker": "GameSearch.cs",
-              "ToolTip": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\GameSearch.cs",
-              "RelativeToolTip": "GameSearch.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAAAAwMYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T15:03:00.636Z",
+              "WhenOpened": "2026-11-05T03:56:50.93Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Theme.cs",
-              "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\Theme.cs",
-              "RelativeDocumentMoniker": "Theme.cs",
-              "ToolTip": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\Theme.cs",
-              "RelativeToolTip": "Theme.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "AppHost.cs",
+              "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\AppHost.cs",
+              "RelativeDocumentMoniker": "AppHost.cs",
+              "ToolTip": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\AppHost.cs",
+              "RelativeToolTip": "AppHost.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T15:02:37.928Z",
+              "WhenOpened": "2026-11-05T04:11:46.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainScreenPreset.cs",
+              "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\MainScreenPreset.cs",
+              "RelativeDocumentMoniker": "MainScreenPreset.cs",
+              "ToolTip": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\MainScreenPreset.cs",
+              "RelativeToolTip": "MainScreenPreset.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAcwLEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T02:27:06.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MainScreenPreset.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\MainScreenPreset.cs",
+              "RelativeDocumentMoniker": "MainScreenPreset.cs",
+              "ToolTip": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\MainScreenPreset.cs [Design]",
+              "RelativeToolTip": "MainScreenPreset.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T02:26:08.421Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainScreen.cs",
+              "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\MainScreen.cs",
+              "RelativeDocumentMoniker": "MainScreen.cs",
+              "ToolTip": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\MainScreen.cs",
+              "RelativeToolTip": "MainScreen.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T02:10:54.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "GameSearch.cs [Design]",
               "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\GameSearch.cs",
               "RelativeDocumentMoniker": "GameSearch.cs",
@@ -120,32 +166,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameSearch.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\GameSearch.Designer.cs",
-              "RelativeDocumentMoniker": "GameSearch.Designer.cs",
-              "ToolTip": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\GameSearch.Designer.cs",
-              "RelativeToolTip": "GameSearch.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK4AAAAsAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "GameSearch.cs",
+              "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\GameSearch.cs",
+              "RelativeDocumentMoniker": "GameSearch.cs",
+              "ToolTip": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\GameSearch.cs",
+              "RelativeToolTip": "GameSearch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T15:02:51.298Z",
+              "WhenOpened": "2026-10-29T15:03:00.636Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainScreen.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\MainScreen.cs",
-              "RelativeDocumentMoniker": "MainScreen.cs",
-              "ToolTip": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\MainScreen.cs [Design]",
-              "RelativeToolTip": "MainScreen.cs [Design]",
+              "DocumentIndex": 7,
+              "Title": "Theme.cs",
+              "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\Theme.cs",
+              "RelativeDocumentMoniker": "Theme.cs",
+              "ToolTip": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\Theme.cs",
+              "RelativeToolTip": "Theme.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T03:51:56.509Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-10-29T15:02:37.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "GamePanel.cs",
               "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\GamePanel.cs",
               "RelativeDocumentMoniker": "GamePanel.cs",
@@ -153,37 +199,22 @@
               "RelativeToolTip": "GamePanel.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAnwC0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T15:45:50.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-29T15:45:50.119Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "GamePanel.cs [Design]",
               "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\GamePanel.cs",
               "RelativeDocumentMoniker": "GamePanel.cs",
               "ToolTip": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\GamePanel.cs [Design]",
               "RelativeToolTip": "GamePanel.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T15:33:54.221Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-10-29T15:33:54.221Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GamePanel.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\GamePanel.Designer.cs",
-              "RelativeDocumentMoniker": "GamePanel.Designer.cs",
-              "ToolTip": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\GamePanel.Designer.cs",
-              "RelativeToolTip": "GamePanel.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T15:34:00.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "databaseInstance.cs [Design]",
               "DocumentMoniker": "C:\\Users\\schin\\Desktop\\CSStuff\\CS499\\GamersHoard\\SeniorDesignProject\\databaseInstance.cs",
               "RelativeDocumentMoniker": "databaseInstance.cs",
