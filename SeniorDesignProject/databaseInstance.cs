@@ -36,6 +36,21 @@ namespace SeniorDesignProject
 
         private void clark_Click(object sender, EventArgs e)
         {
+            DatabaseTool database = new DatabaseTool();
+
+            List<GameInstance> games = database.getAllGames();
+
+            foreach (GameInstance game in games)
+            {
+                Console.WriteLine("----------------------");
+                Console.WriteLine("Name: " + game.Name);
+                Console.WriteLine("Lowest Price: " + game.LowestPrice);
+                Console.WriteLine("Description: " + game.Description);
+                Console.WriteLine("Image: " + game.Image);
+                Console.WriteLine("Best Store: " + game.BestStore);
+                Console.WriteLine("Average Price: " + game.AveragePrice);
+            }
+
             this.Parent.Controls.Remove(this);
         }
     }
