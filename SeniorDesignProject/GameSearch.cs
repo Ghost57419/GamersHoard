@@ -84,6 +84,7 @@ namespace SeniorDesignProject
                 Padding = new Padding(16),
                 BackColor = Color.Transparent
             };
+
             body.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30f));
             body.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70f));
             body.RowStyles.Add(new RowStyle(SizeType.Percent, 100f));
@@ -175,7 +176,7 @@ namespace SeniorDesignProject
 
         private void ScaleUi()
         {
-            if (Width < 200 || Height < 200) return;
+            if (Width < 100 || Height < 100) return;
 
             float scale = Math.Min(Width / BaseW, Height / BaseH);
             scale = Math.Max(0.6f, Math.Min(scale, 1.8f));

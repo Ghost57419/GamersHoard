@@ -181,7 +181,7 @@ namespace SeniorDesignProject
         private void ScaleUi()
         {
             // Avoids scaling for absurdly small sizes
-            if (Width < 200 || Height < 200) return;
+            if (Width < 100 || Height < 100) return;
 
             // Scale factor
             float scale = Math.Min(Width / BaseW, Height / BaseH);
