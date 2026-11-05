@@ -35,8 +35,8 @@
             this.btnHome = new System.Windows.Forms.Button();
             this.serNav = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.serRec = new System.Windows.Forms.TextBox();
             this.GameDisplayPnl = new System.Windows.Forms.Panel();
+            this.serRec = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -111,6 +111,7 @@
             this.btnHome.TabIndex = 2;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // serNav
             // 
@@ -131,6 +132,13 @@
             this.button1.Text = "<";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // GameDisplayPnl
+            // 
+            this.GameDisplayPnl.Location = new System.Drawing.Point(44, 96);
+            this.GameDisplayPnl.Name = "GameDisplayPnl";
+            this.GameDisplayPnl.Size = new System.Drawing.Size(1156, 725);
+            this.GameDisplayPnl.TabIndex = 4;
+            // 
             // serRec
             // 
             this.serRec.Location = new System.Drawing.Point(408, 28);
@@ -140,22 +148,14 @@
             this.serRec.TabIndex = 3;
             this.serRec.Text = "Search Recommendations..";
             // 
-            // GameDisplayPnl
-            // 
-            this.GameDisplayPnl.Location = new System.Drawing.Point(44, 96);
-            this.GameDisplayPnl.Name = "GameDisplayPnl";
-            this.GameDisplayPnl.Size = new System.Drawing.Size(1156, 725);
-            this.GameDisplayPnl.TabIndex = 4;
-            // 
-            // MainScreen
+            // MainScreenPreset
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
             this.Controls.Add(this.splitContainer1);
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "MainScreen";
-            this.Text = "Form1";
+            this.Name = "MainScreenPreset";
+            this.Size = new System.Drawing.Size(1600, 865);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
