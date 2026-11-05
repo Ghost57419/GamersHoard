@@ -10,8 +10,8 @@ namespace SeniorDesignProject
         {
             Text = "Senior Design Project";
             StartPosition = FormStartPosition.CenterScreen;
-            ClientSize = new Size(1600, 865);
-            MinimumSize = new Size(1000, 600);
+            ClientSize = new Size(1300, 700);
+            MinimumSize = new Size(500, 300);
             BackColor = Theme.BgApp;
 
             // First screen shown. Navigation code swaps this out via FindForm().
