@@ -14,7 +14,7 @@ namespace SeniorDesignProject
 {
     internal class Scraper
     {
-        string url = "https://sandbox.oxylabs.io/products";
+        string url = "https://www.gamestop.com/video-games";
 
         HttpClient client = new HttpClient();
 
@@ -24,11 +24,13 @@ namespace SeniorDesignProject
 
             string html = await response.Content.ReadAsStringAsync();
 
+            System.Diagnostics.Debug.WriteLine(html);
+
             HtmlDocument doc = new HtmlDocument();
 
             doc.LoadHtml(html);
 
-            HtmlNodeCollection products = doc.DocumentNode.SelectNodes("//*[contains(@class,'product-card')]");
+            HtmlNodeCollection products = doc.DocumentNode.SelectNodes("//*[contains(@class,'product-grid-tile-wrapper')]");
 
             if(products == null)
             {

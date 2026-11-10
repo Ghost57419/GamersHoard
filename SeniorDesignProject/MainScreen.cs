@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -79,17 +80,19 @@ namespace SeniorDesignProject
 
         private async void MainScreen_Load(object sender, EventArgs e)
         {
+            Debug.WriteLine("MainScreen_Load started.");
+
             Scraper scraper = new Scraper();
 
             HtmlNodeCollection products = await scraper.GetResponseAsync();
 
             if(products != null && products.Count > 0)
             {
-                MessageBox.Show($"Successfully found {products.Count} products!");
+                Debug.WriteLine($"Successfully found {products.Count} products!");
             }
             else
             {
-                MessageBox.Show("No products found.");
+                Debug.WriteLine("No products found.");
             }
 
         }
