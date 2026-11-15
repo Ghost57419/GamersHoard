@@ -53,5 +53,10 @@ namespace SeniorDesignProject
 
             this.Parent.Controls.Remove(this);
         }
+
+        private void clarksSon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

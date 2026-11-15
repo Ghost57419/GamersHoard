@@ -3,9 +3,9 @@ using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 
-
 namespace SeniorDesignProject
 {
+
     public partial class MainScreenPreset : UserControl
     {
         private const float BaseW = 1600f;
@@ -15,10 +15,10 @@ namespace SeniorDesignProject
         private const float SidebarFraction = 0.215f;
 
         private Font _buttonFont, _inputFont, _arrowFont;
+
         public MainScreenPreset()
         {
             InitializeComponent();
-
             // Ca
             ApplyLayout();
             ApplyTheme();
@@ -206,7 +206,16 @@ namespace SeniorDesignProject
             if (old != null) old.Dispose();
         }
 
-        private void button2_Click(object sender, EventArgs e) { }
+        private void button2_Click(object sender, EventArgs e) 
+        {
+            DatabaseTool db = new DatabaseTool("games");
+
+            GameInstance game1 = new GameInstance("Minecraft", 2.99m, "A game", "An image", "Gamestop", 23.99m);
+            GameInstance game2 = new GameInstance("Fortnite", 22.99m, "A game", "An image", "Gamestop", 26.99m);
+
+            db.addEntry(game1);
+            db.addEntry(game2);
+        }
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e) { }
 

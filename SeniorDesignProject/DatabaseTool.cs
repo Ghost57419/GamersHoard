@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using Microsoft.Data.Sqlite;
-
 // GamersHoard\SeniorDesignProject\bin\x64\Debug
 // File location to error logging and location of database
 
@@ -51,14 +50,16 @@ namespace SeniorDesignProject
             {
                 dbConnection.Open();
                 createTable();
-                
+                Console.WriteLine("Created a database");
+
             }
             catch (Exception error)
             {
                 logInfo(DateTime.Now.ToString() + error.ToString());    // Logs info to an error log
+                Console.WriteLine("Error creating a database");
             }
 
-
+            
             
         }
 
@@ -104,7 +105,7 @@ namespace SeniorDesignProject
         // Logger function for debugging
         private void logInfo(string message)
         {
-            Console.WriteLine("Logging error");
+            Console.WriteLine("Logging error: " + message);
             message += "\n";
             // Open the file and write the message to it
             if (!File.Exists(errorLog))

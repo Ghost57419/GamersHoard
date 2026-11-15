@@ -56,6 +56,7 @@
             this.clarksSon.TabIndex = 0;
             this.clarksSon.Text = "Database";
             this.clarksSon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.clarksSon.Click += new System.EventHandler(this.clarksSon_Click);
             // 
             // databaseInstance
             // 
