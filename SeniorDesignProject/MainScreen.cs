@@ -80,20 +80,6 @@ namespace SeniorDesignProject
 
         private async void MainScreen_Load(object sender, EventArgs e)
         {
-            Debug.WriteLine("MainScreen_Load started.");
-
-            Scraper scraper = new Scraper();
-
-            HtmlNodeCollection products = await scraper.GetResponseAsync();
-
-            if(products != null && products.Count > 0)
-            {
-                Debug.WriteLine($"Successfully found {products.Count} products!");
-            }
-            else
-            {
-                Debug.WriteLine("No products found.");
-            }
 
         }
 

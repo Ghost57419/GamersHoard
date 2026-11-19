@@ -5,6 +5,9 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
+// Packages for Steam
+using System.Collections.Generic;
+
 namespace SeniorDesignProject
 {
     public class AppHost : Form
@@ -26,18 +29,13 @@ namespace SeniorDesignProject
 
         private async void AppHost_Load(object sender, EventArgs e)
         {
-            Scraper scraper = new Scraper();
+            string steamAPIkey = " PUT API KEY HERE";
 
-            HtmlNodeCollection products = await scraper.GetResponseAsync();
+            SteamService steamService = new SteamService(steamAPIkey);
 
-            if (products != null && products.Count > 0)
-            {
-                Debug.WriteLine($"Successfully found {products.Count} products!");
-            }
-            else
-            {
-                Debug.WriteLine("No products found.");
-            }
+            List<SteamApp> steamApps = await steamService.GetAppListAsync();
+
+            MessageBox.Show("Retrieved " + steamApps.Count + " Steam applications.");
         }
     }
 }

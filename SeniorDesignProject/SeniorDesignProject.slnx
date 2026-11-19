@@ -4,6 +4,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Folder Name="/Solution Items/" />
   <Project Path="SeniorDesignProject.csproj" Id="27bcd17e-9de0-4aa1-809e-d7c955ba7ac8">
     <Platform Solution="*|x86" Project="x86" />
     <Platform Solution="Debug|x64" Project="x86" />

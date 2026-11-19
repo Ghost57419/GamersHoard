@@ -108,3 +108,14 @@ C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\x86\Deb
 C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDe.E33ABF4C.Up2Date
 C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.exe
 C:\Users\schin\Desktop\CSStuff\CS499\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.pdb
+C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.csproj.AssemblyReference.cache
+C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.databaseInstance.resources
+C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.gamePanel.resources
+C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.GameSearch.resources
+C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.MainScreenPreset.resources
+C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.MainScreen.resources
+C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.Properties.Resources.resources
+C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.csproj.GenerateResource.cache
+C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.csproj.CoreCompileInputs.cache
+C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.exe
+C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.pdb
