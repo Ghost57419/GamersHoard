@@ -11,12 +11,18 @@ namespace SeniorDesignProject
         public string Name { get; set; }
         public decimal LowestPrice { get; set; }
         public string Description { get; set; }
-        public string Image {  get; set; }
+        public string Image { get; set; }
         public string BestStore { get; set; }
         public decimal AveragePrice { get; set; }
+        public decimal CurrentPrice { get; set; }
+        public string Screenshot { get; set; }
+        public string GameArt { get; set; }
 
 
-        public GameInstance(string name, decimal lowestPrice,string description, string image, string bestStore, decimal averagePrice)
+        public GameInstance(string name, decimal lowestPrice,string description,
+            string image, string bestStore,
+            decimal averagePrice, decimal currentPrice,
+            string screenshot, string gameArt)
         {
             Name = name;
             LowestPrice = lowestPrice;
@@ -24,8 +30,9 @@ namespace SeniorDesignProject
             Image = image;
             BestStore = bestStore;
             AveragePrice = averagePrice;
+            CurrentPrice = currentPrice;
+            Screenshot = screenshot;
+            GameArt = gameArt;
         }
     }
-
-    
 }
