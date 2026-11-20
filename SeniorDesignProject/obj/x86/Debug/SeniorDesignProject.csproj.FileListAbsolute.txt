@@ -119,3 +119,5 @@ C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.csproj.
 C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.csproj.CoreCompileInputs.cache
 C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.exe
 C:\Dev\GamersHoard\SeniorDesignProject\obj\x86\Debug\SeniorDesignProject.pdb
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\thega\Desktop\GamersHoard\SeniorDesignProject\bin\x86\Debug\Newtonsoft.Json.xml

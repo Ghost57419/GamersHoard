@@ -92,7 +92,10 @@ namespace SeniorDesignProject
                 Description TEXT,
                 Image TEXT,
                 BestStore TEXT,
-                AveragePrice REAL
+                AveragePrice REAL,
+                CurrentPrice REAL,
+                Screenshot TEXT,
+                GameArt TEXT
             );";
 
             using (SqliteCommand cmd = new SqliteCommand(sql, dbConnection))
@@ -123,9 +126,9 @@ namespace SeniorDesignProject
         {
             string sql = @"
                 INSERT INTO Games
-                (Name, LowestPrice, Description, Image, BestStore, AveragePrice)
+                (Name, LowestPrice, Description, Image, BestStore, AveragePrice, CurrentPrice, Screenshot, GameArt)
                 VALUES
-                (@name, @lowestPrice, @description, @image, @bestStore, @averagePrice);";
+                (@name, @lowestPrice, @description, @image, @bestStore, @averagePrice, @currentPrice, @screenshot, @gameart);";
 
             using (SqliteCommand cmd = new SqliteCommand(sql, dbConnection))
             {
@@ -135,6 +138,9 @@ namespace SeniorDesignProject
                 cmd.Parameters.AddWithValue("@image", game.Image);
                 cmd.Parameters.AddWithValue("@bestStore", game.BestStore);
                 cmd.Parameters.AddWithValue("@averagePrice", game.AveragePrice);
+                cmd.Parameters.AddWithValue("@currentPrice", game.CurrentPrice);
+                cmd.Parameters.AddWithValue("@screenshot", game.Screenshot);
+                cmd.Parameters.AddWithValue("@gameart", game.GameArt);
 
                 cmd.ExecuteNonQuery();
             }
@@ -216,7 +222,10 @@ namespace SeniorDesignProject
                         reader.GetString(3),
                         reader.GetString(4),
                         reader.GetString(5),
-                        Convert.ToDecimal(reader.GetDouble(6))
+                        Convert.ToDecimal(reader.GetDouble(6)),
+                        Convert.ToDecimal(reader.GetDouble(7)),
+                        reader.GetString(8),
+                        reader.GetString(9)
                     );
 
                     games.Add(game);

@@ -210,8 +210,8 @@ namespace SeniorDesignProject
         {
             DatabaseTool db = new DatabaseTool("games");
 
-            GameInstance game1 = new GameInstance("Minecraft", 2.99m, "A game", "An image", "Gamestop", 23.99m);
-            GameInstance game2 = new GameInstance("Fortnite", 22.99m, "A game", "An image", "Gamestop", 26.99m);
+            GameInstance game1 = new GameInstance("Minecraft", 2.99m, "A game", "An image", "Gamestop", 23.99m, 23.99m, "PNG", "PNG");
+            GameInstance game2 = new GameInstance("Fortnite", 22.99m, "A game", "An image", "Gamestop", 26.99m, 23.99m, "PNG", "PNG");
 
             db.addEntry(game1);
             db.addEntry(game2);
