@@ -29,13 +29,18 @@ namespace SeniorDesignProject
 
         private async void AppHost_Load(object sender, EventArgs e)
         {
-            string steamAPIkey = " PUT API KEY HERE";
+            string steamAPIkey = "";
 
             SteamService steamService = new SteamService(steamAPIkey);
 
             List<SteamApp> steamApps = await steamService.GetAppListAsync();
 
-            MessageBox.Show("Retrieved " + steamApps.Count + " Steam applications.");
+            foreach(SteamApp app in steamApps)
+            {
+                Console.WriteLine("App ID: " + app.AppId);
+                Console.WriteLine("Name: " + app.Name);
+                Console.WriteLine("-------------------------");
+            }
         }
     }
 }

@@ -36,7 +36,7 @@ public class SteamService
 
 			// Build the request URL.
 			string url =
-				"https://partner.steam-api.com/IStoreService/GetAppList/v1/" +
+				"https://api.steampowered.com/IStoreService/GetAppList/v1/" +
 				"?key=" + Uri.EscapeDataString(apiKey) +
 				"&input_json=" + Uri.EscapeDataString(inputJson);
 
