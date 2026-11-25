@@ -84,8 +84,9 @@ namespace SeniorDesignProject
 
         private void createTable()
         {
+            // NEED TO FIX LATER, GAMES should be the name of the database
             string sql = @"
-            CREATE TABLE IF NOT EXISTS Games (
+            CREATE TABLE IF NOT EXISTS games (
                 GameID INTEGER PRIMARY KEY AUTOINCREMENT,
                 Name TEXT NOT NULL UNIQUE,
                 LowestPrice REAL,
@@ -125,7 +126,7 @@ namespace SeniorDesignProject
         public void addEntry(GameInstance game)
         {
             string sql = @"
-                INSERT INTO Games
+                INSERT INTO games
                 (Name, LowestPrice, Description, Image, BestStore, AveragePrice, CurrentPrice, Screenshot, GameArt)
                 VALUES
                 (@name, @lowestPrice, @description, @image, @bestStore, @averagePrice, @currentPrice, @screenshot, @gameart);";
