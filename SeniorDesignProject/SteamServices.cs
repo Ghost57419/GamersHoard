@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
@@ -85,4 +87,38 @@ public class SteamService
 
 		return allApps;
 	}
+
+	// Insert the new method here.
+	public async Task SaveAppDetailsAsync(uint appID)
+	{
+		string url =
+			"https://store.steampowered.com/api/appdetails" +
+			"?appids=" + appID +
+			"&cc=us&l=en";
+
+		HttpResponseMessage response = await client.GetAsync(url);
+
+		response.EnsureSuccessStatusCode();
+
+		string json = await response.Content.ReadAsStringAsync();
+
+		// Might not be reliable for pathing
+		string folderPath = Path.Combine(
+			Directory.GetParent(
+				AppDomain.CurrentDomain.BaseDirectory
+				).Parent.FullName,
+			"SteamData"
+		);
+
+		Directory.CreateDirectory(folderPath);
+
+		string filePath = Path.Combine(
+			folderPath,
+			appID + ".json"
+		);
+
+		File.WriteAllText(filePath, json);
+
+        Debug.WriteLine("Saving files to: " + folderPath);
+    }
 }

@@ -7,6 +7,7 @@ using System.Windows.Forms;
 
 // Packages for Steam
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace SeniorDesignProject
 {
@@ -37,9 +38,9 @@ namespace SeniorDesignProject
 
             foreach(SteamApp app in steamApps)
             {
-                Console.WriteLine("App ID: " + app.AppId);
-                Console.WriteLine("Name: " + app.Name);
-                Console.WriteLine("-------------------------");
+                await steamService.SaveAppDetailsAsync(app.AppId);
+
+                await Task.Delay(2000);
             }
         }
     }
