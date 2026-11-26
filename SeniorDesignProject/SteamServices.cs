@@ -89,7 +89,7 @@ public class SteamService
 	}
 
 	// Insert the new method here.
-	public async Task SaveAppDetailsAsync(uint appID)
+	public async Task SaveAppDetailsAsync(uint appID, string appName)
 	{
 		string url =
 			"https://store.steampowered.com/api/appdetails" +
@@ -114,7 +114,7 @@ public class SteamService
 
 		string filePath = Path.Combine(
 			folderPath,
-			appID + ".json"
+			appName + ".json"
 		);
 
 		File.WriteAllText(filePath, json);

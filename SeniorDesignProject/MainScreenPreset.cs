@@ -210,6 +210,13 @@ namespace SeniorDesignProject
         {
             DatabaseTool db = new DatabaseTool("games");
 
+
+            // This is all for pure testing
+
+            // Some button will take the name, likely from the monitor, 
+
+
+
             GameInstance game1 = new GameInstance("Minecraft", 2.99m, "A game", "An image", "Gamestop", 23.99m, 23.99m, "PNG", "PNG");
             GameInstance game2 = new GameInstance("Fortnite", 22.99m, "A game", "An image", "Gamestop", 26.99m, 23.99m, "PNG", "PNG");
 

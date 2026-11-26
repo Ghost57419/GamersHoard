@@ -167,6 +167,7 @@
     <Compile Include="GameSearch.Designer.cs">
       <DependentUpon>GameSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="JSONReader.cs" />
     <Compile Include="MainScreenPreset.cs">
       <SubType>UserControl</SubType>
     </Compile>
