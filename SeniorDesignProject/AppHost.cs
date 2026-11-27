@@ -30,7 +30,7 @@ namespace SeniorDesignProject
 
         private async void AppHost_Load(object sender, EventArgs e)
         {
-            string steamAPIkey = "";
+            string steamAPIkey = "FFD6CDF82914056731409CE473D539F4";
 
             SteamService steamService = new SteamService(steamAPIkey);
 
@@ -38,7 +38,7 @@ namespace SeniorDesignProject
 
             foreach(SteamApp app in steamApps)
             {
-                await steamService.SaveAppDetailsAsync(app.AppId);
+                await steamService.SaveAppDetailsAsync(app.AppId, app.Name);
 
                 await Task.Delay(2000);
             }
