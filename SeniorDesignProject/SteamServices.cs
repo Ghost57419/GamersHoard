@@ -5,16 +5,18 @@ using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
+using SeniorDesignProject;
 
 public class SteamService
 {
 	private readonly HttpClient client;
 	private readonly string apiKey;
-
+	private gamesDictionary steamDictionary;
 	public SteamService(string steamAPIkey)
 	{
 		apiKey = steamAPIkey;
 		client = new HttpClient();
+		steamDictionary = new gamesDictionary("steam.txt");
 	}
 
 	public async Task<List<SteamApp>> GetAppListAsync()
@@ -111,14 +113,21 @@ public class SteamService
 		);
 
 		Directory.CreateDirectory(folderPath);
+        string appTempName = string.Join("", appName.Split(Path.GetInvalidFileNameChars()));
+		appTempName = string.Join("", appName.Split(' ', '-'));
+        appTempName = appTempName.ToLower();
 
-		string filePath = Path.Combine(
+		steamDictionary.addGame(appTempName, appID.ToString());
+
+        string filePath = Path.Combine(
 			folderPath,
-			appName + ".json"
+			appID + ".json"
 		);
 
-		File.WriteAllText(filePath, json);
+        Console.WriteLine(steamDictionary.retrieveID("counterstrike"));
 
-        Debug.WriteLine("Saving files to: " + folderPath);
+        File.WriteAllText(filePath, json);
+
+        Console.WriteLine("Saving files to: " + folderPath);
     }
 }

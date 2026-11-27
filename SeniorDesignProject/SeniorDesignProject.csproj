@@ -161,6 +161,7 @@
     <Compile Include="GamePanel.Designer.cs">
       <DependentUpon>GamePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="gamesDictionary.cs" />
     <Compile Include="GameSearch.cs">
       <SubType>UserControl</SubType>
     </Compile>

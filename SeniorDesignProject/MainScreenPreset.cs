@@ -216,12 +216,23 @@ namespace SeniorDesignProject
             // Some button will take the name, likely from the monitor, 
 
 
+            // Retrieve the info from the gamesDictionary
+            gamesDictionary steamGames = new gamesDictionary("steam.txt");
+            string ID = steamGames.retrieveID("counterstrike");
+            // Take the ID and read the JSON and get the game file
+            JSONReader fileReader = new JSONReader();
+            GameInstance game = fileReader.getGameData(ID);
+            // Add the game
+            if (game != null)
+            {
+                db.addEntry(game);
+            }
 
-            GameInstance game1 = new GameInstance("Minecraft", 2.99m, "A game", "An image", "Gamestop", 23.99m, 23.99m, "PNG", "PNG");
-            GameInstance game2 = new GameInstance("Fortnite", 22.99m, "A game", "An image", "Gamestop", 26.99m, 23.99m, "PNG", "PNG");
+            //GameInstance game1 = new GameInstance("Minecraft", 2.99m, "A game", "An image", "Gamestop", 23.99m, 23.99m, "PNG", "PNG");
+            //GameInstance game2 = new GameInstance("Fortnite", 22.99m, "A game", "An image", "Gamestop", 26.99m, 23.99m, "PNG", "PNG");
 
-            db.addEntry(game1);
-            db.addEntry(game2);
+            //db.addEntry(game1);
+            //db.addEntry(game2);
         }
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e) { }
